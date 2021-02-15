@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mosaic_blocks:blocks/white_upward_point"
+  }
+}

@@ -1,4 +1,10 @@
 package mod.ilja615.mosaic_blocks;
 
-public class MosaicBlock {
+import net.minecraft.block.Block;
+
+public class MosaicBlock extends Block
+{
+    public MosaicBlock(Properties properties) {
+        super(properties);
+    }
 }
