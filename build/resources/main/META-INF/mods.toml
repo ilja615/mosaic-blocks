@@ -7,5 +7,5 @@ modId="mosaic_blocks" #mandatory
 version="1.16.5-0.1" #mandatory
 displayName="Mosaic Blocks" #mandatory
 description='''
-This mod adds new Mosaic Blocks that can use for decoration. Craft from diorite and glass, then pick a pattern in the stone cutter, and then right click them with dye.
+This mod adds new Mosaic Blocks that can be used for decoration. Craft from diorite and glass, then pick a pattern in the stone cutter, and then right click them with dye.
 '''

@@ -6,15 +6,17 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.Item;
+import net.minecraft.particles.IParticleData;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.EnumProperty;
 import net.minecraft.state.StateContainer;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.util.Direction;
-import net.minecraft.util.Hand;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class MosaicBlock extends HorizontalBlock
 {
@@ -37,121 +39,30 @@ public class MosaicBlock extends HorizontalBlock
     @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit)
     {
-        String itemName = player.getHeldItem(handIn).getItem().getRegistryName().toString();
         if (state.hasProperty(COLOR)) {
-            if (itemName.equals("minecraft:white_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.WHITE), 3);
+            if (MosaicColor.isDyeItem(player.getHeldItem(handIn).getItem())) {
+                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.DYE_COLOR_MAP.get(player.getHeldItem(handIn).getItem().getRegistryName().toString())), 3);
                 if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
                     player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:orange_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.ORANGE), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:magenta_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.MAGENTA), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:light_blue")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.LIGHT_BLUE), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:yellow_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.YELLOW), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:lime_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.LIME), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:pink_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.PINK), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:gray_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.GRAY), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:light_gray_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.LIGHT_GRAY), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:cyan_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.CYAN), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:purple_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.PURPLE), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:blue_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.BLUE), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:brown_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.BROWN), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:green_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.GREEN), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:red_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.RED), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                }
-                return ActionResultType.SUCCESS;
-            }
-            if (itemName.equals("minecraft:black_dye")) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.BLACK), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
+                    worldIn.playSound(player, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 0.5f, 1.0F);
+                    spawnParticles(worldIn, pos);
+                } else {
+                    worldIn.playSound(player, pos, SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 0.5f, 1.0F);
                 }
                 return ActionResultType.SUCCESS;
             }
         }
         return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    protected void spawnParticles(World world, BlockPos pos)
+    {
+        for(int i = 0; i < 7; ++i) {
+            double d0 = world.rand.nextGaussian() * 0.02D;
+            double d1 = world.rand.nextGaussian() * 0.02D;
+            double d2 = world.rand.nextGaussian() * 0.02D;
+            world.addParticle(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 1.2D, pos.getZ() + 0.5D, d0, d1, d2);
+        }
     }
 }

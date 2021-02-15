@@ -1,5 +1,6 @@
 {
   "block.mosaic_blocks.mosaic_block": "Mosaic Block",
+  "block.mosaic_blocks.arrow_mosaic_block": "Arrow Mosaic Block",
   "block.mosaic_blocks.bowl_mosaic_block": "Bowl Mosaic Block",
   "block.mosaic_blocks.corner_mosaic_block": "Corner Mosaic Block",
   "block.mosaic_blocks.crescent_mosaic_block": "Crescent Mosaic Block",
@@ -8,7 +9,6 @@
   "block.mosaic_blocks.fold_mosaic_block": "Fold Mosaic Block",
   "block.mosaic_blocks.full_mosaic_block": "Full Mosaic Block",
   "block.mosaic_blocks.half_mosaic_block": "Half Mosaic Block",
-  "block.mosaic_blocks.hourglass_mosaic_block": "Hourglass Mosaic Block",
   "block.mosaic_blocks.quarter_mosaic_block": "Quarter Mosaic Block",
   "block.mosaic_blocks.round_mosaic_block": "Round Mosaic Block",
   "block.mosaic_blocks.stair_mosaic_block": "Stair Mosaic Block",

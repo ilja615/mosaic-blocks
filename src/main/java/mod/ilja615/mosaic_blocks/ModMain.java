@@ -26,7 +26,8 @@ import static mod.ilja615.mosaic_blocks.ModMain.MOD_ID;
 public class ModMain
 {
     public static final String MOD_ID = "mosaic_blocks";
-    public static final Item.Properties ITEM_PROPERTY = new Item.Properties().group(ItemGroup.BUILDING_BLOCKS);
+    public static final Item.Properties ITEM_PROPERTY = new Item.Properties().group(ItemGroup.DECORATIONS);
+    public static final Block.Properties BLOCK_PROPERTY = Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA);
 
     public static ModMain INSTANCE;
 
@@ -41,23 +42,23 @@ public class ModMain
         DeferredRegister<Block> blocks = makeRegister(modEventBus, ForgeRegistries.BLOCKS);
         DeferredRegister<Item> items = makeRegister(modEventBus, ForgeRegistries.ITEMS);
 
-        ModBlocks.MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "mosaic_block", () -> new Block(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.BOWL_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "bowl_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.CORNER_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "corner_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.CRESCENT_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "crescent_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.DOWNWARD_POINT_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "downward_point_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.DOWNWARD_SLOPE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "downward_slope_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.FOLD_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "fold_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.FULL_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "full_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.HALF_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "half_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.HOURGLASS_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "hourglass_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.QUARTER_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "quarter_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.ROUND_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "round_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.STAIR_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "stair_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.TRIANGLE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "triangle_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.UPWARD_POINT_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "upward_point_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.UPWARD_SLOPE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "upward_slope_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
-        ModBlocks.WEDGE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "wedge_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "mosaic_block", () -> new Block(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.ARROW_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "arrow_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.BOWL_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "bowl_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.CORNER_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "corner_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.CRESCENT_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "crescent_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.DOWNWARD_POINT_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "downward_point_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.DOWNWARD_SLOPE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "downward_slope_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.FOLD_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "fold_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.FULL_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "full_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.HALF_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "half_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.QUARTER_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "quarter_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.ROUND_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "round_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.STAIR_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "stair_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.TRIANGLE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "triangle_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.UPWARD_POINT_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "upward_point_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.UPWARD_SLOPE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "upward_slope_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.WEDGE_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "wedge_mosaic_block", () -> new MosaicBlock(BLOCK_PROPERTY), block -> new BlockItem(block, ITEM_PROPERTY));
 
     }
 
