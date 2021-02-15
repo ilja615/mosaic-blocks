@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DG",
+    "GD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diorite"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "mosaic_blocks:mosaic_block",
+    "count": 4
+  }
+}

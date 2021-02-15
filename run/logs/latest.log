@@ -1,0 +1,4 @@
+[15feb2021 11:40:06.233] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.0.21, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, /Users/Ilja/.gradle/caches/forge_gradle/assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[15feb2021 11:40:06.241] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_131 by Oracle Corporation
+[15feb2021 11:40:06.275] [main/WARN] [cpw.mods.modlauncher.SecureJarHandler/]: LEGACY JDK DETECTED, SECURED JAR HANDLING DISABLED
+[15feb2021 11:40:06.832] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mosaic_blocks:block/mosaic_block_180"
+  }
+}

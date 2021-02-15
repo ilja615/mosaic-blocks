@@ -1,0 +1,31 @@
+[15feb2021 11:40:06.233] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.0.21, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, /Users/Ilja/.gradle/caches/forge_gradle/assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[15feb2021 11:40:06.241] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_131 by Oracle Corporation
+[15feb2021 11:40:06.259] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [minecraft,fmldevdata,fmldevclient,fmldevserver,fmluserdevserver,testharness,fmluserdevdata,fmlclient,fmluserdevclient,fmlserver]
+[15feb2021 11:40:06.275] [main/WARN] [cpw.mods.modlauncher.SecureJarHandler/]: LEGACY JDK DETECTED, SECURED JAR HANDLING DISABLED
+[15feb2021 11:40:06.299] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[15feb2021 11:40:06.391] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,object_holder_definalize,runtime_enum_extender,accesstransformer,capability_inject_definalize,runtimedistcleaner]
+[15feb2021 11:40:06.430] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[15feb2021 11:40:06.447] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: []
+[15feb2021 11:40:06.540] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [mixin,fml]
+[15feb2021 11:40:06.540] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[15feb2021 11:40:06.543] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[15feb2021 11:40:06.555] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[15feb2021 11:40:06.555] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[15feb2021 11:40:06.556] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/]: Injecting tracing printstreams for STDOUT/STDERR.
+[15feb2021 11:40:06.565] [main/DEBUG] [net.minecraftforge.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 36.0
+[15feb2021 11:40:06.565] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML 36.0 loading
+[15feb2021 11:40:06.565] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found ModLauncher version : 8.0.9+86+master.3cf110c
+[15feb2021 11:40:06.566] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Initializing modjar URL handler
+[15feb2021 11:40:06.570] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found AccessTransformer version : 3.0.1+61+master.47bca0e
+[15feb2021 11:40:06.572] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found EventBus version : 4.0.0+65+master.6080a3f
+[15feb2021 11:40:06.573] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found Runtime Dist Cleaner
+[15feb2021 11:40:06.580] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found CoreMod version : 4.0.6+14+master.c21a551
+[15feb2021 11:40:06.582] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package implementation version 3.2.0+13+master.8ddb2cc
+[15feb2021 11:40:06.582] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package specification 3
+[15feb2021 11:40:06.832] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[15feb2021 11:40:06.832] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[15feb2021 11:40:06.839] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[15feb2021 11:40:06.857] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[15feb2021 11:40:06.858] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[15feb2021 11:40:06.862] [main/DEBUG] [mixin/]: Mixin bootstrap service org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapperBootstrap is not available: LaunchWrapper is not available
+[15feb2021 11:40:06.875] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in sun.misc.Launcher$AppClassLoader@18b4aac2

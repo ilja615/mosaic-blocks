@@ -1,0 +1,11 @@
+modLoader="javafml" #mandatory
+loaderVersion="[33,)" #mandatory
+license="ARR" #mandatory
+credits="HexaBlu for making the textures and the idea" #optional
+[[mods]] #mandatory
+modId="mosaic_blocks" #mandatory
+version="1.16.5-0.1" #mandatory
+displayName="Mosaic Blocks" #mandatory
+description='''
+This mod adds new Mosaic Blocks that can use for decoration. Craft from diorite and glass, then pick a pattern in the stone cutter, and then right click them with dye.
+'''

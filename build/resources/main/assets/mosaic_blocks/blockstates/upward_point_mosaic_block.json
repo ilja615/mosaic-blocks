@@ -1,0 +1,260 @@
+{
+  "variants": {
+    "color=red,facing=north": {
+      "model": "mosaic_blocks:block/red_upward_point",
+      "y": 0
+    },
+    "color=white,facing=north": {
+      "model": "mosaic_blocks:block/white_upward_point",
+      "y": 0
+    },
+    "color=yellow,facing=north": {
+      "model": "mosaic_blocks:block/yellow_upward_point",
+      "y": 0
+    },
+    "color=purple,facing=north": {
+      "model": "mosaic_blocks:block/purple_upward_point",
+      "y": 0
+    },
+    "color=pink,facing=north": {
+      "model": "mosaic_blocks:block/pink_upward_point",
+      "y": 0
+    },
+    "color=orange,facing=north": {
+      "model": "mosaic_blocks:block/orange_upward_point",
+      "y": 0
+    },
+    "color=magenta,facing=north": {
+      "model": "mosaic_blocks:block/magenta_upward_point",
+      "y": 0
+    },
+    "color=lime,facing=north": {
+      "model": "mosaic_blocks:block/lime_upward_point",
+      "y": 0
+    },
+    "color=light_gray,facing=north": {
+      "model": "mosaic_blocks:block/light_gray_upward_point",
+      "y": 0
+    },
+    "color=light_blue,facing=north": {
+      "model": "mosaic_blocks:block/light_blue_upward_point",
+      "y": 0
+    },
+    "color=green,facing=north": {
+      "model": "mosaic_blocks:block/green_upward_point",
+      "y": 0
+    },
+    "color=gray,facing=north": {
+      "model": "mosaic_blocks:block/gray_upward_point",
+      "y": 0
+    },
+    "color=cyan,facing=north": {
+      "model": "mosaic_blocks:block/cyan_upward_point",
+      "y": 0
+    },
+    "color=brown,facing=north": {
+      "model": "mosaic_blocks:block/brown_upward_point",
+      "y": 0
+    },
+    "color=blue,facing=north": {
+      "model": "mosaic_blocks:block/blue_upward_point",
+      "y": 0
+    },
+    "color=black,facing=north": {
+      "model": "mosaic_blocks:block/black_upward_point",
+      "y": 0
+    },
+    "color=red,facing=south": {
+      "model": "mosaic_blocks:block/red_upward_point",
+      "y": 180
+    },
+    "color=white,facing=south": {
+      "model": "mosaic_blocks:block/white_upward_point",
+      "y": 180
+    },
+    "color=yellow,facing=south": {
+      "model": "mosaic_blocks:block/yellow_upward_point",
+      "y": 180
+    },
+    "color=purple,facing=south": {
+      "model": "mosaic_blocks:block/purple_upward_point",
+      "y": 180
+    },
+    "color=pink,facing=south": {
+      "model": "mosaic_blocks:block/pink_upward_point",
+      "y": 180
+    },
+    "color=orange,facing=south": {
+      "model": "mosaic_blocks:block/orange_upward_point",
+      "y": 180
+    },
+    "color=magenta,facing=south": {
+      "model": "mosaic_blocks:block/magenta_upward_point",
+      "y": 180
+    },
+    "color=lime,facing=south": {
+      "model": "mosaic_blocks:block/lime_upward_point",
+      "y": 180
+    },
+    "color=light_gray,facing=south": {
+      "model": "mosaic_blocks:block/light_gray_upward_point",
+      "y": 180
+    },
+    "color=light_blue,facing=south": {
+      "model": "mosaic_blocks:block/light_blue_upward_point",
+      "y": 180
+    },
+    "color=green,facing=south": {
+      "model": "mosaic_blocks:block/green_upward_point",
+      "y": 180
+    },
+    "color=gray,facing=south": {
+      "model": "mosaic_blocks:block/gray_upward_point",
+      "y": 180
+    },
+    "color=cyan,facing=south": {
+      "model": "mosaic_blocks:block/cyan_upward_point",
+      "y": 180
+    },
+    "color=brown,facing=south": {
+      "model": "mosaic_blocks:block/brown_upward_point",
+      "y": 180
+    },
+    "color=blue,facing=south": {
+      "model": "mosaic_blocks:block/blue_upward_point",
+      "y": 180
+    },
+    "color=black,facing=south": {
+      "model": "mosaic_blocks:block/black_upward_point",
+      "y": 180
+    },
+    "color=red,facing=east": {
+      "model": "mosaic_blocks:block/red_upward_point",
+      "y": 90
+    },
+    "color=white,facing=east": {
+      "model": "mosaic_blocks:block/white_upward_point",
+      "y": 90
+    },
+    "color=yellow,facing=east": {
+      "model": "mosaic_blocks:block/yellow_upward_point",
+      "y": 90
+    },
+    "color=purple,facing=east": {
+      "model": "mosaic_blocks:block/purple_upward_point",
+      "y": 90
+    },
+    "color=pink,facing=east": {
+      "model": "mosaic_blocks:block/pink_upward_point",
+      "y": 90
+    },
+    "color=orange,facing=east": {
+      "model": "mosaic_blocks:block/orange_upward_point",
+      "y": 90
+    },
+    "color=magenta,facing=east": {
+      "model": "mosaic_blocks:block/magenta_upward_point",
+      "y": 90
+    },
+    "color=lime,facing=east": {
+      "model": "mosaic_blocks:block/lime_upward_point",
+      "y": 90
+    },
+    "color=light_gray,facing=east": {
+      "model": "mosaic_blocks:block/light_gray_upward_point",
+      "y": 90
+    },
+    "color=light_blue,facing=east": {
+      "model": "mosaic_blocks:block/light_blue_upward_point",
+      "y": 90
+    },
+    "color=green,facing=east": {
+      "model": "mosaic_blocks:block/green_upward_point",
+      "y": 90
+    },
+    "color=gray,facing=east": {
+      "model": "mosaic_blocks:block/gray_upward_point",
+      "y": 90
+    },
+    "color=cyan,facing=east": {
+      "model": "mosaic_blocks:block/cyan_upward_point",
+      "y": 90
+    },
+    "color=brown,facing=east": {
+      "model": "mosaic_blocks:block/brown_upward_point",
+      "y": 90
+    },
+    "color=blue,facing=east": {
+      "model": "mosaic_blocks:block/blue_upward_point",
+      "y": 90
+    },
+    "color=black,facing=east": {
+      "model": "mosaic_blocks:block/black_upward_point",
+      "y": 90
+    },
+    "color=red,facing=west": {
+      "model": "mosaic_blocks:block/red_upward_point",
+      "y": 270
+    },
+    "color=white,facing=west": {
+      "model": "mosaic_blocks:block/white_upward_point",
+      "y": 270
+    },
+    "color=yellow,facing=west": {
+      "model": "mosaic_blocks:block/yellow_upward_point",
+      "y": 270
+    },
+    "color=purple,facing=west": {
+      "model": "mosaic_blocks:block/purple_upward_point",
+      "y": 270
+    },
+    "color=pink,facing=west": {
+      "model": "mosaic_blocks:block/pink_upward_point",
+      "y": 270
+    },
+    "color=orange,facing=west": {
+      "model": "mosaic_blocks:block/orange_upward_point",
+      "y": 270
+    },
+    "color=magenta,facing=west": {
+      "model": "mosaic_blocks:block/magenta_upward_point",
+      "y": 270
+    },
+    "color=lime,facing=west": {
+      "model": "mosaic_blocks:block/lime_upward_point",
+      "y": 270
+    },
+    "color=light_gray,facing=west": {
+      "model": "mosaic_blocks:block/light_gray_upward_point",
+      "y": 270
+    },
+    "color=light_blue,facing=west": {
+      "model": "mosaic_blocks:block/light_blue_upward_point",
+      "y": 270
+    },
+    "color=green,facing=west": {
+      "model": "mosaic_blocks:block/green_upward_point",
+      "y": 270
+    },
+    "color=gray,facing=west": {
+      "model": "mosaic_blocks:block/gray_upward_point",
+      "y": 270
+    },
+    "color=cyan,facing=west": {
+      "model": "mosaic_blocks:block/cyan_upward_point",
+      "y": 270
+    },
+    "color=brown,facing=west": {
+      "model": "mosaic_blocks:block/brown_upward_point",
+      "y": 270
+    },
+    "color=blue,facing=west": {
+      "model": "mosaic_blocks:block/blue_upward_point",
+      "y": 270
+    },
+    "color=black,facing=west": {
+      "model": "mosaic_blocks:block/black_upward_point",
+      "y": 270
+    }
+  }
+}

@@ -2,11 +2,9 @@ package mod.ilja615.mosaic_blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FireBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.SoundEvents;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
@@ -43,7 +41,7 @@ public class ModMain
         DeferredRegister<Block> blocks = makeRegister(modEventBus, ForgeRegistries.BLOCKS);
         DeferredRegister<Item> items = makeRegister(modEventBus, ForgeRegistries.ITEMS);
 
-        ModBlocks.MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
+        ModBlocks.MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "mosaic_block", () -> new Block(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
         ModBlocks.BOWL_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "bowl_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
         ModBlocks.CORNER_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "corner_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));
         ModBlocks.CRESCENT_MOSAIC_BLOCK = registerBlockAndItem(blocks, items, "crescent_mosaic_block", () -> new MosaicBlock(Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA)), block -> new BlockItem(block, ITEM_PROPERTY));

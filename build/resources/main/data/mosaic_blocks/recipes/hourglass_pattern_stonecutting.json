@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mosaic_blocks:mosaic_block"
+  },
+  "result": "mosaic_blocks:hourglass_mosaic_block",
+  "count": 1
+}
