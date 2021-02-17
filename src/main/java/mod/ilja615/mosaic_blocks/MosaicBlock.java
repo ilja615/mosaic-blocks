@@ -15,6 +15,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -39,30 +40,24 @@ public class MosaicBlock extends HorizontalBlock
     @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit)
     {
-        if (state.hasProperty(COLOR)) {
+        if (state.hasProperty(COLOR) && !worldIn.isRemote) {
             if (MosaicColor.isDyeItem(player.getHeldItem(handIn).getItem())) {
                 worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.DYE_COLOR_MAP.get(player.getHeldItem(handIn).getItem().getRegistryName().toString())), 3);
                 if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
                     player.getHeldItem(handIn).shrink(1);
-                    worldIn.playSound(player, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 0.5f, 1.0F);
-                    spawnParticles(worldIn, pos);
+                    worldIn.playSound(null, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 0.5f, 1.0F);
+                    for(int i = 0; i < 7; ++i) {
+                        double d0 = worldIn.rand.nextGaussian() * 0.02D;
+                        double d1 = worldIn.rand.nextGaussian() * 0.02D;
+                        double d2 = worldIn.rand.nextGaussian() * 0.02D;
+                        ((ServerWorld)worldIn).spawnParticle(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 1.2D, pos.getZ() + 0.5D, 1,  d0, d1, d2, 0d);
+                    }
                 } else {
-                    worldIn.playSound(player, pos, SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 0.5f, 1.0F);
+                    worldIn.playSound(null, pos, SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 0.5f, 1.0F);
                 }
                 return ActionResultType.SUCCESS;
             }
         }
         return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    protected void spawnParticles(World world, BlockPos pos)
-    {
-        for(int i = 0; i < 7; ++i) {
-            double d0 = world.rand.nextGaussian() * 0.02D;
-            double d1 = world.rand.nextGaussian() * 0.02D;
-            double d2 = world.rand.nextGaussian() * 0.02D;
-            world.addParticle(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 1.2D, pos.getZ() + 0.5D, d0, d1, d2);
-        }
     }
 }
