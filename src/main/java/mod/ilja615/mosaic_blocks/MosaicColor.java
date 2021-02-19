@@ -9,33 +9,39 @@ import java.util.Map;
 
 public enum MosaicColor implements IStringSerializable
 {
-    WHITE("white"),
-    ORANGE("orange"),
-    MAGENTA("magenta"),
-    LIGHT_BLUE("light_blue"),
-    YELLOW("yellow"),
-    LIME("lime"),
-    PINK("pink"),
-    GRAY("gray"),
-    LIGHT_GRAY("light_gray"),
-    CYAN("cyan"),
-    PURPLE("purple"),
-    BLUE("blue"),
-    BROWN("brown"),
-    GREEN("green"),
-    RED("red"),
-    BLACK("black");
+    WHITE("white", 0),
+    ORANGE("orange", 1),
+    MAGENTA("magenta", 2),
+    LIGHT_BLUE("light_blue", 3),
+    YELLOW("yellow", 4),
+    LIME("lime", 5),
+    PINK("pink", 6),
+    GRAY("gray", 7),
+    LIGHT_GRAY("light_gray", 8),
+    CYAN("cyan", 9),
+    PURPLE("purple", 10),
+    BLUE("blue", 11),
+    BROWN("brown", 12),
+    GREEN("green", 13),
+    RED("red", 14),
+    BLACK("black", 15);
 
     private final String name;
+    private final int indexNumber;
 
-    private MosaicColor(String name)
+
+    private MosaicColor(String name, int indexNumber)
     {
-        this.name = name;
+        this.name = name; this.indexNumber = indexNumber;
     }
 
     @Override
     public String getString() {
         return this.name;
+    }
+
+    public int getIndexNumber() {
+        return this.indexNumber;
     }
 
     public static boolean isDyeItem(Item item)

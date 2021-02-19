@@ -1,0 +1,6 @@
+
+[value]
+	#The chance that the dye will be consumed when painting a mosaic block in the survival mode. 0 is that it will never consume, and 100 that it will always consume. 20 is the default value and that is the same chance as an Ender Eye breaking, for comparison.
+	#Range: 0 ~ 100
+	dye_consume_chance = 20
+

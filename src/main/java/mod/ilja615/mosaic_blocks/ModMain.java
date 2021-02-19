@@ -8,10 +8,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -35,9 +38,13 @@ public class ModMain
     {
         INSTANCE = this;
 
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.config);
+
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
         modEventBus.addListener(this::setupCommon);
+
+        Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("mosaic_blocks-server.toml").toString());
 
         DeferredRegister<Block> blocks = makeRegister(modEventBus, ForgeRegistries.BLOCKS);
         DeferredRegister<Item> items = makeRegister(modEventBus, ForgeRegistries.ITEMS);

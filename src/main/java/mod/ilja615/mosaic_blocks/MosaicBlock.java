@@ -45,18 +45,20 @@ public class MosaicBlock extends HorizontalBlock
     {
         if (state.hasProperty(COLOR) && !worldIn.isRemote) {
             if (MosaicColor.isDyeItem(player.getHeldItem(handIn).getItem())) {
-                worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.DYE_COLOR_MAP.get(player.getHeldItem(handIn).getItem().getRegistryName().toString())), 3);
-                if (worldIn.rand.nextFloat() < 0.2f && !player.isCreative()) {
-                    player.getHeldItem(handIn).shrink(1);
-                    worldIn.playSound(null, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 0.5f, 1.0F);
-                    for(int i = 0; i < 7; ++i) {
-                        double d0 = worldIn.rand.nextGaussian() * 0.02D;
-                        double d1 = worldIn.rand.nextGaussian() * 0.02D;
-                        double d2 = worldIn.rand.nextGaussian() * 0.02D;
-                        ((ServerWorld)worldIn).spawnParticle(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 1.2D, pos.getZ() + 0.5D, 1,  d0, d1, d2, 0d);
+                if (MosaicColor.DYE_COLOR_MAP.get(player.getHeldItem(handIn).getItem().getRegistryName().toString()) != state.get(COLOR)) {
+                    worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.DYE_COLOR_MAP.get(player.getHeldItem(handIn).getItem().getRegistryName().toString())), 3);
+                    if (worldIn.rand.nextFloat() < (Config.DYE_CONSUME_CHANCE.get() / 100.0f) && !player.isCreative()) {
+                        player.getHeldItem(handIn).shrink(1);
+                        worldIn.playSound(null, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 0.5f, 1.0F);
+                        for(int i = 0; i < 7; ++i) {
+                            double d0 = worldIn.rand.nextGaussian() * 0.02D;
+                            double d1 = worldIn.rand.nextGaussian() * 0.02D;
+                            double d2 = worldIn.rand.nextGaussian() * 0.02D;
+                            ((ServerWorld)worldIn).spawnParticle(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 1.2D, pos.getZ() + 0.5D, 1,  d0, d1, d2, 0d);
+                        }
+                    } else {
+                        worldIn.playSound(null, pos, SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 0.5f, 1.0F);
                     }
-                } else {
-                    worldIn.playSound(null, pos, SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 0.5f, 1.0F);
                 }
                 return ActionResultType.SUCCESS;
             }
@@ -73,5 +75,21 @@ public class MosaicBlock extends HorizontalBlock
                 return stateIn.with(COLOR, MosaicColor.WHITE);
         }
         return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+    }
+
+    @Override
+    public boolean hasComparatorInputOverride(BlockState state)
+    {
+        return true;
+    }
+
+    @Override
+    public int getComparatorInputOverride(BlockState blockState, World worldIn, BlockPos pos)
+    {
+        if (blockState.hasProperty(COLOR))
+        {
+            return ((MosaicColor)blockState.get(COLOR)).getIndexNumber();
+        }
+        return 0;
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_glazed_terracotta",
+  "textures": {
+    "pattern": "mosaic_blocks:block/red_hourglass"
+  }
+}

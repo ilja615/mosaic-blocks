@@ -1,6 +1,6 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/template_glazed_terracotta",
   "textures": {
-    "all": "mosaic_blocks:block/mosaic_block_180"
+    "pattern": "mosaic_blocks:block/mosaic_block_180"
   }
 }
