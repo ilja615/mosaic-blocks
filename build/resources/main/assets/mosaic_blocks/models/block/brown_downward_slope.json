@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "mosaic_blocks:block/brown_"
+    "all": "mosaic_blocks:block/brown_downward_slope"
   }
 }

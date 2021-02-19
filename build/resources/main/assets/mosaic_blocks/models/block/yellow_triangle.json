@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "mosaic_blocks:block/yellow_triange"
+    "all": "mosaic_blocks:block/yellow_triangle"
   }
 }
