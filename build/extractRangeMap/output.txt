@@ -1,0 +1,970 @@
+start 1 mod/ilja615/mosaic_blocks/Config.java eec207d33db8e8239e569fe475c22e3c
+package 8 25 mod.ilja615.mosaic_blocks
+classdef 275 1371 mod/ilja615/mosaic_blocks/Config
+# Start CLASS mod/ilja615/mosaic_blocks/Config
+  class 276 3 Mod false net/minecraftforge/fml/common/Mod
+  class 280 18 EventBusSubscriber true net/minecraftforge/fml/common/Mod$EventBusSubscriber
+  class 312 6 Config false mod/ilja615/mosaic_blocks/Config
+  class 346 15 ForgeConfigSpec false net/minecraftforge/common/ForgeConfigSpec
+  class 362 7 Builder true net/minecraftforge/common/ForgeConfigSpec$Builder
+  field 370 7 builder mod/ilja615/mosaic_blocks/Config
+  class 384 15 ForgeConfigSpec false net/minecraftforge/common/ForgeConfigSpec
+  class 400 7 Builder true net/minecraftforge/common/ForgeConfigSpec$Builder
+  class 435 15 ForgeConfigSpec false net/minecraftforge/common/ForgeConfigSpec
+  field 451 6 config mod/ilja615/mosaic_blocks/Config
+  methoddef 464 76 <clinit> ()V
+  # Start METHOD <clinit>()V
+    method 485 4 init mod/ilja615/mosaic_blocks/Config init (Lnet/minecraftforge/common/ForgeConfigSpec$Builder;)V
+    field 490 7 builder mod/ilja615/mosaic_blocks/Config
+    field 509 6 config mod/ilja615/mosaic_blocks/Config
+    field 518 7 builder mod/ilja615/mosaic_blocks/Config
+    method 526 5 build net/minecraftforge/common/ForgeConfigSpec$Builder build ()Lnet/minecraftforge/common/ForgeConfigSpec;
+  # End METHOD
+  methoddef 546 432 loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V
+  # Start METHOD loadConfig(Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V
+    method 565 10 loadConfig mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V
+    class 576 15 ForgeConfigSpec false net/minecraftforge/common/ForgeConfigSpec
+    parameter 592 6 config mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 0
+    class 600 6 String false java/lang/String
+    parameter 607 4 path mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 1
+    class 627 6 System false java/lang/System
+    field 634 3 out java/lang/System
+    method 638 7 println java/io/PrintStream println (Ljava/lang/String;)V
+    parameter 665 4 path mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 1
+    class 686 19 CommentedFileConfig false com/electronwill/nightconfig/core/file/CommentedFileConfig
+    local_variable 706 4 file mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 2 Lcom/electronwill/nightconfig/core/file/CommentedFileConfig;
+    class 713 19 CommentedFileConfig false com/electronwill/nightconfig/core/file/CommentedFileConfig
+    method 733 7 builder com/electronwill/nightconfig/core/file/CommentedFileConfig builder (Ljava/io/File;)Lcom/electronwill/nightconfig/core/file/CommentedFileConfigBuilder;
+    class 745 4 File false java/io/File
+    parameter 750 4 path mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 1
+    method 757 4 sync com/electronwill/nightconfig/core/file/GenericBuilder sync ()Lcom/electronwill/nightconfig/core/file/GenericBuilder;
+    method 764 8 autosave com/electronwill/nightconfig/core/file/GenericBuilder autosave ()Lcom/electronwill/nightconfig/core/file/GenericBuilder;
+    method 775 11 writingMode com/electronwill/nightconfig/core/file/GenericBuilder writingMode (Lcom/electronwill/nightconfig/core/io/WritingMode;)Lcom/electronwill/nightconfig/core/file/GenericBuilder;
+    class 787 11 WritingMode false com/electronwill/nightconfig/core/io/WritingMode
+    field 799 7 REPLACE com/electronwill/nightconfig/core/io/WritingMode
+    method 808 5 build com/electronwill/nightconfig/core/file/GenericBuilder build ()Lcom/electronwill/nightconfig/core/file/FileConfig;
+    class 825 6 System false java/lang/System
+    field 832 3 out java/lang/System
+    method 836 7 println java/io/PrintStream println (Ljava/lang/String;)V
+    parameter 861 4 path mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 1
+    local_variable 876 4 file mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 2 Lcom/electronwill/nightconfig/core/file/CommentedFileConfig;
+    method 881 4 load com/electronwill/nightconfig/core/file/FileConfig load ()V
+    class 897 6 System false java/lang/System
+    field 904 3 out java/lang/System
+    method 908 7 println java/io/PrintStream println (Ljava/lang/String;)V
+    parameter 934 4 path mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 1
+    parameter 949 6 config mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 0
+    method 956 9 setConfig net/minecraftforge/common/ForgeConfigSpec setConfig (Lcom/electronwill/nightconfig/core/CommentedConfig;)V
+    local_variable 966 4 file mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V 2 Lcom/electronwill/nightconfig/core/file/CommentedFileConfig;
+  # End METHOD
+  class 998 15 ForgeConfigSpec false net/minecraftforge/common/ForgeConfigSpec
+  class 1014 8 IntValue true net/minecraftforge/common/ForgeConfigSpec$IntValue
+  field 1023 18 DYE_CONSUME_CHANCE mod/ilja615/mosaic_blocks/Config
+  methoddef 1048 596 init (Lnet/minecraftforge/common/ForgeConfigSpec$Builder;)V
+  # Start METHOD init(Lnet/minecraftforge/common/ForgeConfigSpec$Builder;)V
+    method 1067 4 init mod/ilja615/mosaic_blocks/Config init (Lnet/minecraftforge/common/ForgeConfigSpec$Builder;)V
+    class 1072 15 ForgeConfigSpec false net/minecraftforge/common/ForgeConfigSpec
+    class 1088 7 Builder true net/minecraftforge/common/ForgeConfigSpec$Builder
+    parameter 1096 7 builder mod/ilja615/mosaic_blocks/Config init (Lnet/minecraftforge/common/ForgeConfigSpec$Builder;)V 0
+    parameter 1119 7 builder mod/ilja615/mosaic_blocks/Config init (Lnet/minecraftforge/common/ForgeConfigSpec$Builder;)V 0
+    method 1127 7 comment net/minecraftforge/common/ForgeConfigSpec$Builder comment (Ljava/lang/String;)Lnet/minecraftforge/common/ForgeConfigSpec$Builder;
+    field 1192 18 DYE_CONSUME_CHANCE mod/ilja615/mosaic_blocks/Config
+    parameter 1213 7 builder mod/ilja615/mosaic_blocks/Config init (Lnet/minecraftforge/common/ForgeConfigSpec$Builder;)V 0
+    method 1238 7 comment net/minecraftforge/common/ForgeConfigSpec$Builder comment (Ljava/lang/String;)Lnet/minecraftforge/common/ForgeConfigSpec$Builder;
+    method 1584 13 defineInRange net/minecraftforge/common/ForgeConfigSpec$Builder defineInRange (Ljava/lang/String;III)Lnet/minecraftforge/common/ForgeConfigSpec$IntValue;
+  # End METHOD
+# End CLASS
+end
+start 1 mod/ilja615/mosaic_blocks/ModBlocks.java 153a9c765e6c4cc7adcf4b02a5a369df
+package 8 25 mod.ilja615.mosaic_blocks
+classdef 117 1077 mod/ilja615/mosaic_blocks/ModBlocks
+# Start CLASS mod/ilja615/mosaic_blocks/ModBlocks
+  class 130 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+  class 160 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 175 5 Block false net/minecraft/block/Block
+  field 182 12 MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 214 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 229 5 Block false net/minecraft/block/Block
+  field 236 18 ARROW_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 274 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 289 5 Block false net/minecraft/block/Block
+  field 296 17 BOWL_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 333 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 348 5 Block false net/minecraft/block/Block
+  field 355 19 CORNER_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 394 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 409 5 Block false net/minecraft/block/Block
+  field 416 21 CRESCENT_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 457 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 472 5 Block false net/minecraft/block/Block
+  field 479 27 DOWNWARD_POINT_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 526 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 541 5 Block false net/minecraft/block/Block
+  field 548 27 DOWNWARD_SLOPE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 595 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 610 5 Block false net/minecraft/block/Block
+  field 617 17 FOLD_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 654 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 669 5 Block false net/minecraft/block/Block
+  field 676 17 FULL_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 713 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 728 5 Block false net/minecraft/block/Block
+  field 735 17 HALF_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 772 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 787 5 Block false net/minecraft/block/Block
+  field 794 20 QUARTER_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 834 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 849 5 Block false net/minecraft/block/Block
+  field 856 18 ROUND_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 894 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 909 5 Block false net/minecraft/block/Block
+  field 916 18 STAIR_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 954 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 969 5 Block false net/minecraft/block/Block
+  field 976 21 TRIANGLE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 1017 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 1032 5 Block false net/minecraft/block/Block
+  field 1039 25 UPWARD_POINT_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 1084 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 1099 5 Block false net/minecraft/block/Block
+  field 1106 25 UPWARD_SLOPE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+  class 1151 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+  class 1166 5 Block false net/minecraft/block/Block
+  field 1173 18 WEDGE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+# End CLASS
+end
+start 1 mod/ilja615/mosaic_blocks/ModMain.java 48f202ba7a68f01c72ea304e02bd05c9
+package 8 25 mod.ilja615.mosaic_blocks
+classdef 1067 4955 mod/ilja615/mosaic_blocks/ModMain
+# Start CLASS mod/ilja615/mosaic_blocks/ModMain
+  class 1068 3 Mod false net/minecraftforge/fml/common/Mod
+  field 1072 6 MOD_ID mod/ilja615/mosaic_blocks/ModMain
+  class 1093 7 ModMain false mod/ilja615/mosaic_blocks/ModMain
+  class 1127 6 String false java/lang/String
+  field 1134 6 MOD_ID mod/ilja615/mosaic_blocks/ModMain
+  class 1184 4 Item false net/minecraft/item/Item
+  class 1189 10 Properties true net/minecraft/item/Item$Properties
+  field 1200 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+  class 1220 4 Item false net/minecraft/item/Item
+  class 1225 10 Properties true net/minecraft/item/Item$Properties
+  method 1238 3 tab net/minecraft/item/Item$Properties tab (Lnet/minecraft/item/ItemGroup;)Lnet/minecraft/item/Item$Properties;
+  class 1242 9 ItemGroup false net/minecraft/item/ItemGroup
+  field 1252 15 TAB_DECORATIONS net/minecraft/item/ItemGroup
+  class 1294 5 Block false net/minecraft/block/Block
+  class 1300 10 Properties true net/minecraft/block/AbstractBlock$Properties
+  field 1311 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+  class 1328 5 Block false net/minecraft/block/Block
+  class 1334 10 Properties true net/minecraft/block/AbstractBlock$Properties
+  method 1345 4 copy net/minecraft/block/AbstractBlock$Properties copy (Lnet/minecraft/block/AbstractBlock;)Lnet/minecraft/block/AbstractBlock$Properties;
+  class 1350 6 Blocks false net/minecraft/block/Blocks
+  field 1357 23 WHITE_GLAZED_TERRACOTTA net/minecraft/block/Blocks
+  class 1402 7 ModMain false mod/ilja615/mosaic_blocks/ModMain
+  field 1410 8 INSTANCE mod/ilja615/mosaic_blocks/ModMain
+  methoddef 1425 3802 <init> ()V
+  # Start METHOD <init>()V
+    method 1432 7 ModMain mod/ilja615/mosaic_blocks/ModMain <init> ()V
+    field 1456 8 INSTANCE mod/ilja615/mosaic_blocks/ModMain
+    class 1482 17 ModLoadingContext false net/minecraftforge/fml/ModLoadingContext
+    method 1500 3 get net/minecraftforge/fml/ModLoadingContext get ()Lnet/minecraftforge/fml/ModLoadingContext;
+    method 1506 14 registerConfig net/minecraftforge/fml/ModLoadingContext registerConfig (Lnet/minecraftforge/fml/config/ModConfig$Type;Lnet/minecraftforge/common/ForgeConfigSpec;)V
+    class 1521 9 ModConfig false net/minecraftforge/fml/config/ModConfig
+    class 1531 4 Type true net/minecraftforge/fml/config/ModConfig$Type
+    field 1536 6 SERVER net/minecraftforge/fml/config/ModConfig$Type
+    class 1544 6 Config false mod/ilja615/mosaic_blocks/Config
+    field 1551 6 config mod/ilja615/mosaic_blocks/Config
+    class 1569 9 IEventBus false net/minecraftforge/eventbus/api/IEventBus
+    local_variable 1579 11 modEventBus mod/ilja615/mosaic_blocks/ModMain <init> ()V 0 Lnet/minecraftforge/eventbus/api/IEventBus;
+    class 1593 24 FMLJavaModLoadingContext false net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext
+    method 1618 3 get net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext get ()Lnet/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext;
+    method 1624 14 getModEventBus net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext getModEventBus ()Lnet/minecraftforge/eventbus/api/IEventBus;
+    class 1650 9 IEventBus false net/minecraftforge/eventbus/api/IEventBus
+    local_variable 1660 13 forgeEventBus mod/ilja615/mosaic_blocks/ModMain <init> ()V 1 Lnet/minecraftforge/eventbus/api/IEventBus;
+    class 1676 14 MinecraftForge false net/minecraftforge/common/MinecraftForge
+    field 1691 9 EVENT_BUS net/minecraftforge/common/MinecraftForge
+    local_variable 1710 11 modEventBus mod/ilja615/mosaic_blocks/ModMain <init> ()V 0 Lnet/minecraftforge/eventbus/api/IEventBus;
+    method 1722 11 addListener net/minecraftforge/eventbus/api/IEventBus addListener (Ljava/util/function/Consumer;)V
+    method 1740 11 setupCommon mod/ilja615/mosaic_blocks/ModMain setupCommon (Lnet/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent;)V
+    class 1763 6 Config false mod/ilja615/mosaic_blocks/Config
+    method 1770 10 loadConfig mod/ilja615/mosaic_blocks/Config loadConfig (Lnet/minecraftforge/common/ForgeConfigSpec;Ljava/lang/String;)V
+    class 1781 6 Config false mod/ilja615/mosaic_blocks/Config
+    field 1788 6 config mod/ilja615/mosaic_blocks/Config
+    class 1796 8 FMLPaths false net/minecraftforge/fml/loading/FMLPaths
+    field 1805 9 CONFIGDIR net/minecraftforge/fml/loading/FMLPaths
+    method 1815 3 get net/minecraftforge/fml/loading/FMLPaths get ()Ljava/nio/file/Path;
+    method 1821 7 resolve java/nio/file/Path resolve (Ljava/lang/String;)Ljava/nio/file/Path;
+    method 1858 8 toString java/nio/file/Path toString ()Ljava/lang/String;
+    class 1880 16 DeferredRegister false net/minecraftforge/registries/DeferredRegister
+    class 1897 5 Block false net/minecraft/block/Block
+    local_variable 1904 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    method 1913 12 makeRegister mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 1926 11 modEventBus mod/ilja615/mosaic_blocks/ModMain <init> ()V 0 Lnet/minecraftforge/eventbus/api/IEventBus;
+    class 1939 15 ForgeRegistries false net/minecraftforge/registries/ForgeRegistries
+    field 1955 6 BLOCKS net/minecraftforge/registries/ForgeRegistries
+    class 1972 16 DeferredRegister false net/minecraftforge/registries/DeferredRegister
+    class 1989 4 Item false net/minecraft/item/Item
+    local_variable 1995 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    method 2003 12 makeRegister mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 2016 11 modEventBus mod/ilja615/mosaic_blocks/ModMain <init> ()V 0 Lnet/minecraftforge/eventbus/api/IEventBus;
+    class 2029 15 ForgeRegistries false net/minecraftforge/registries/ForgeRegistries
+    field 2045 5 ITEMS net/minecraftforge/registries/ForgeRegistries
+    class 2062 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 2072 12 MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 2087 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 2108 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 2116 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 2139 31 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 2149 5 Block false net/minecraft/block/Block
+      field 2155 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 2172 5 block mod/ilja615/mosaic_blocks/ModMain lambda$2 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 2172 44 lambda$2 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$2(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 2185 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 2195 5 block mod/ilja615/mosaic_blocks/ModMain lambda$2 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 2202 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 2227 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 2237 18 ARROW_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 2258 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 2279 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 2287 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 2316 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 2326 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 2338 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 2355 5 block mod/ilja615/mosaic_blocks/ModMain lambda$4 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 2355 44 lambda$4 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$4(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 2368 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 2378 5 block mod/ilja615/mosaic_blocks/ModMain lambda$4 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 2385 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 2410 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 2420 17 BOWL_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 2440 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 2461 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 2469 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 2497 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 2507 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 2519 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 2536 5 block mod/ilja615/mosaic_blocks/ModMain lambda$6 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 2536 44 lambda$6 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$6(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 2549 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 2559 5 block mod/ilja615/mosaic_blocks/ModMain lambda$6 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 2566 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 2591 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 2601 19 CORNER_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 2623 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 2644 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 2652 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 2682 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 2692 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 2704 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 2721 5 block mod/ilja615/mosaic_blocks/ModMain lambda$8 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 2721 44 lambda$8 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$8(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 2734 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 2744 5 block mod/ilja615/mosaic_blocks/ModMain lambda$8 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 2751 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 2776 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 2786 21 CRESCENT_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 2810 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 2831 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 2839 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 2871 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 2881 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 2893 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 2910 5 block mod/ilja615/mosaic_blocks/ModMain lambda$10 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 2910 44 lambda$10 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$10(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 2923 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 2933 5 block mod/ilja615/mosaic_blocks/ModMain lambda$10 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 2940 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 2965 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 2975 27 DOWNWARD_POINT_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 3005 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 3026 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 3034 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 3072 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 3082 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 3094 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 3111 5 block mod/ilja615/mosaic_blocks/ModMain lambda$12 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 3111 44 lambda$12 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$12(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 3124 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 3134 5 block mod/ilja615/mosaic_blocks/ModMain lambda$12 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 3141 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 3166 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 3176 27 DOWNWARD_SLOPE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 3206 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 3227 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 3235 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 3273 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 3283 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 3295 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 3312 5 block mod/ilja615/mosaic_blocks/ModMain lambda$14 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 3312 44 lambda$14 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$14(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 3325 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 3335 5 block mod/ilja615/mosaic_blocks/ModMain lambda$14 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 3342 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 3367 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 3377 17 FOLD_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 3397 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 3418 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 3426 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 3454 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 3464 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 3476 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 3493 5 block mod/ilja615/mosaic_blocks/ModMain lambda$16 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 3493 44 lambda$16 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$16(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 3506 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 3516 5 block mod/ilja615/mosaic_blocks/ModMain lambda$16 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 3523 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 3548 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 3558 17 FULL_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 3578 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 3599 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 3607 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 3635 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 3645 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 3657 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 3674 5 block mod/ilja615/mosaic_blocks/ModMain lambda$18 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 3674 44 lambda$18 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$18(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 3687 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 3697 5 block mod/ilja615/mosaic_blocks/ModMain lambda$18 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 3704 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 3729 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 3739 17 HALF_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 3759 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 3780 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 3788 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 3816 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 3826 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 3838 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 3855 5 block mod/ilja615/mosaic_blocks/ModMain lambda$20 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 3855 44 lambda$20 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$20(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 3868 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 3878 5 block mod/ilja615/mosaic_blocks/ModMain lambda$20 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 3885 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 3910 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 3920 20 QUARTER_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 3943 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 3964 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 3972 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 4003 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 4013 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 4025 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 4042 5 block mod/ilja615/mosaic_blocks/ModMain lambda$22 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 4042 44 lambda$22 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$22(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 4055 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 4065 5 block mod/ilja615/mosaic_blocks/ModMain lambda$22 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 4072 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 4097 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 4107 18 ROUND_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 4128 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 4149 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 4157 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 4186 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 4196 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 4208 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 4225 5 block mod/ilja615/mosaic_blocks/ModMain lambda$24 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 4225 44 lambda$24 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$24(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 4238 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 4248 5 block mod/ilja615/mosaic_blocks/ModMain lambda$24 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 4255 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 4280 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 4290 18 STAIR_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 4311 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 4332 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 4340 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 4369 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 4379 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 4391 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 4408 5 block mod/ilja615/mosaic_blocks/ModMain lambda$26 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 4408 44 lambda$26 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$26(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 4421 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 4431 5 block mod/ilja615/mosaic_blocks/ModMain lambda$26 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 4438 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 4463 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 4473 21 TRIANGLE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 4497 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 4518 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 4526 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 4558 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 4568 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 4580 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 4597 5 block mod/ilja615/mosaic_blocks/ModMain lambda$28 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 4597 44 lambda$28 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$28(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 4610 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 4620 5 block mod/ilja615/mosaic_blocks/ModMain lambda$28 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 4627 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 4652 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 4662 25 UPWARD_POINT_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 4690 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 4711 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 4719 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 4755 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 4765 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 4777 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 4794 5 block mod/ilja615/mosaic_blocks/ModMain lambda$30 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 4794 44 lambda$30 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$30(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 4807 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 4817 5 block mod/ilja615/mosaic_blocks/ModMain lambda$30 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 4824 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 4849 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 4859 25 UPWARD_SLOPE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 4887 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 4908 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 4916 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 4952 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 4962 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 4974 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 4991 5 block mod/ilja615/mosaic_blocks/ModMain lambda$32 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 4991 44 lambda$32 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$32(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 5004 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 5014 5 block mod/ilja615/mosaic_blocks/ModMain lambda$32 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 5021 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    class 5046 9 ModBlocks false mod/ilja615/mosaic_blocks/ModBlocks
+    field 5056 18 WEDGE_MOSAIC_BLOCK mod/ilja615/mosaic_blocks/ModBlocks
+    method 5077 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    local_variable 5098 6 blocks mod/ilja615/mosaic_blocks/ModMain <init> ()V 3 Lnet/minecraftforge/registries/DeferredRegister;
+    local_variable 5106 5 items mod/ilja615/mosaic_blocks/ModMain <init> ()V 4 Lnet/minecraftforge/registries/DeferredRegister;
+    methoddef 5135 37 lambda[get] ()Lnet/minecraft/block/Block;
+    # Start METHOD lambda[get]()Lnet/minecraft/block/Block;
+      class 5145 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+      field 5157 14 BLOCK_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+    parameter 5174 5 block mod/ilja615/mosaic_blocks/ModMain lambda$34 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+    methoddef 5174 44 lambda$34 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda$34(Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem;
+      class 5187 9 BlockItem false net/minecraft/item/BlockItem
+      parameter 5197 5 block mod/ilja615/mosaic_blocks/ModMain lambda$34 (Lnet/minecraft/block/Block;)Lnet/minecraft/item/BlockItem; 0
+      field 5204 13 ITEM_PROPERTY mod/ilja615/mosaic_blocks/ModMain
+    # End METHOD
+  # End METHOD
+  methoddef 5233 70 setupCommon (Lnet/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent;)V
+  # Start METHOD setupCommon(Lnet/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent;)V
+    method 5246 11 setupCommon mod/ilja615/mosaic_blocks/ModMain setupCommon (Lnet/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent;)V
+    class 5264 19 FMLCommonSetupEvent false net/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent
+    parameter 5284 5 event mod/ilja615/mosaic_blocks/ModMain setupCommon (Lnet/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent;)V 0
+  # End METHOD
+  methoddef 5309 274 makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister;
+  # Start METHOD makeRegister(Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister;
+    class 5327 19 IForgeRegistryEntry false net/minecraftforge/registries/IForgeRegistryEntry
+    class 5351 16 DeferredRegister false net/minecraftforge/registries/DeferredRegister
+    method 5371 12 makeRegister mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister;
+    class 5384 9 IEventBus false net/minecraftforge/eventbus/api/IEventBus
+    parameter 5394 6 modBus mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister; 0
+    class 5402 14 IForgeRegistry false net/minecraftforge/registries/IForgeRegistry
+    parameter 5420 8 registry mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister; 1
+    class 5444 16 DeferredRegister false net/minecraftforge/registries/DeferredRegister
+    local_variable 5464 8 register mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister; 2 Lnet/minecraftforge/registries/DeferredRegister;
+    class 5475 16 DeferredRegister false net/minecraftforge/registries/DeferredRegister
+    method 5492 6 create net/minecraftforge/registries/DeferredRegister create (Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+    parameter 5499 8 registry mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister; 1
+    field 5509 6 MOD_ID mod/ilja615/mosaic_blocks/ModMain
+    local_variable 5526 8 register mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister; 2 Lnet/minecraftforge/registries/DeferredRegister;
+    method 5535 8 register net/minecraftforge/registries/DeferredRegister register (Lnet/minecraftforge/eventbus/api/IEventBus;)V
+    parameter 5544 6 modBus mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister; 0
+    local_variable 5568 8 register mod/ilja615/mosaic_blocks/ModMain makeRegister (Lnet/minecraftforge/eventbus/api/IEventBus;Lnet/minecraftforge/registries/IForgeRegistry;)Lnet/minecraftforge/registries/DeferredRegister; 2 Lnet/minecraftforge/registries/DeferredRegister;
+  # End METHOD
+  methoddef 5589 431 registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+  # Start METHOD registerBlockAndItem(Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    class 5611 5 Block false net/minecraft/block/Block
+    class 5631 9 BlockItem false net/minecraft/item/BlockItem
+    class 5642 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+    method 5664 20 registerBlockAndItem mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject;
+    class 5685 16 DeferredRegister false net/minecraftforge/registries/DeferredRegister
+    class 5702 5 Block false net/minecraft/block/Block
+    parameter 5709 6 blocks mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 0
+    class 5717 16 DeferredRegister false net/minecraftforge/registries/DeferredRegister
+    class 5734 4 Item false net/minecraft/item/Item
+    parameter 5740 5 items mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 1
+    class 5747 6 String false java/lang/String
+    parameter 5754 4 name mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 2
+    class 5760 8 Supplier false java/util/function/Supplier
+    parameter 5776 13 blockSupplier mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 3
+    class 5791 8 Function false java/util/function/Function
+    parameter 5812 11 itemFactory mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 4
+    class 5839 14 RegistryObject false net/minecraftforge/fml/RegistryObject
+    local_variable 5861 11 blockObject mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 5 Lnet/minecraftforge/fml/RegistryObject;
+    parameter 5875 6 blocks mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 0
+    method 5882 8 register net/minecraftforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/fml/RegistryObject;
+    parameter 5891 4 name mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 2
+    parameter 5897 13 blockSupplier mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 3
+    parameter 5921 5 items mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 1
+    method 5927 8 register net/minecraftforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/fml/RegistryObject;
+    parameter 5936 4 name mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 2
+    methoddef 5942 42 lambda[get] ()Lnet/minecraft/item/BlockItem;
+    # Start METHOD lambda[get]()Lnet/minecraft/item/BlockItem;
+      parameter 5948 11 itemFactory mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 4
+      method 5960 5 apply java/util/function/Function apply (Ljava/lang/Object;)Ljava/lang/Object;
+      local_variable 5966 11 blockObject mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 5 Lnet/minecraftforge/fml/RegistryObject;
+      method 5978 3 get java/util/function/Supplier get ()Ljava/lang/Object;
+    # End METHOD
+    local_variable 6002 11 blockObject mod/ilja615/mosaic_blocks/ModMain registerBlockAndItem (Lnet/minecraftforge/registries/DeferredRegister;Lnet/minecraftforge/registries/DeferredRegister;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Function;)Lnet/minecraftforge/fml/RegistryObject; 5 Lnet/minecraftforge/fml/RegistryObject;
+  # End METHOD
+# End CLASS
+end
+start 1 mod/ilja615/mosaic_blocks/MosaicBlock.java fd09bfee4946d7bc38c0ecc4df678182
+package 8 25 mod.ilja615.mosaic_blocks
+classdef 968 3303 mod/ilja615/mosaic_blocks/MosaicBlock
+# Start CLASS mod/ilja615/mosaic_blocks/MosaicBlock
+  class 981 11 MosaicBlock false mod/ilja615/mosaic_blocks/MosaicBlock
+  class 1001 15 HorizontalBlock false net/minecraft/block/HorizontalBlock
+  class 1043 12 EnumProperty false net/minecraft/state/EnumProperty
+  field 1056 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+  class 1064 12 EnumProperty false net/minecraft/state/EnumProperty
+  method 1077 6 create net/minecraft/state/EnumProperty create (Ljava/lang/String;Ljava/lang/Class;)Lnet/minecraft/state/EnumProperty;
+  class 1093 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+  methoddef 1118 212 <init> (Lnet/minecraft/block/AbstractBlock$Properties;)V
+  # Start METHOD <init>(Lnet/minecraft/block/AbstractBlock$Properties;)V
+    method 1125 11 MosaicBlock mod/ilja615/mosaic_blocks/MosaicBlock <init> (Lnet/minecraft/block/AbstractBlock$Properties;)V
+    class 1137 10 Properties false net/minecraft/block/AbstractBlock$Properties
+    parameter 1148 10 properties mod/ilja615/mosaic_blocks/MosaicBlock <init> (Lnet/minecraft/block/AbstractBlock$Properties;)V 0
+    parameter 1180 10 properties mod/ilja615/mosaic_blocks/MosaicBlock <init> (Lnet/minecraft/block/AbstractBlock$Properties;)V 0
+    method 1206 20 registerDefaultState net/minecraft/block/Block registerDefaultState (Lnet/minecraft/block/BlockState;)V
+    field 1232 15 stateDefinition net/minecraft/block/Block
+    method 1248 3 any net/minecraft/state/StateContainer any ()Lnet/minecraft/state/StateHolder;
+    method 1254 8 setValue net/minecraft/state/StateHolder setValue (Lnet/minecraft/state/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+    field 1263 6 FACING net/minecraft/block/HorizontalBlock
+    class 1271 9 Direction false net/minecraft/util/Direction
+    field 1281 5 NORTH net/minecraft/util/Direction
+    method 1288 8 setValue net/minecraft/state/StateHolder setValue (Lnet/minecraft/state/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+    field 1297 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    class 1304 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+    field 1316 5 WHITE mod/ilja615/mosaic_blocks/MosaicColor
+  # End METHOD
+  methoddef 1336 136 createBlockStateDefinition (Lnet/minecraft/state/StateContainer$Builder;)V
+  # Start METHOD createBlockStateDefinition(Lnet/minecraft/state/StateContainer$Builder;)V
+    method 1351 26 createBlockStateDefinition net/minecraft/block/Block createBlockStateDefinition (Lnet/minecraft/state/StateContainer$Builder;)V
+    class 1378 14 StateContainer false net/minecraft/state/StateContainer
+    class 1393 7 Builder true net/minecraft/state/StateContainer$Builder
+    class 1401 5 Block false net/minecraft/block/Block
+    class 1408 10 BlockState false net/minecraft/block/BlockState
+    parameter 1420 7 builder mod/ilja615/mosaic_blocks/MosaicBlock createBlockStateDefinition (Lnet/minecraft/state/StateContainer$Builder;)V 0
+    parameter 1439 7 builder mod/ilja615/mosaic_blocks/MosaicBlock createBlockStateDefinition (Lnet/minecraft/state/StateContainer$Builder;)V 0
+    method 1447 3 add net/minecraft/state/StateContainer$Builder add ([Lnet/minecraft/state/Property;)Lnet/minecraft/state/StateContainer$Builder;
+    field 1451 6 FACING net/minecraft/block/HorizontalBlock
+    field 1459 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+  # End METHOD
+  methoddef 1478 181 getStateForPlacement (Lnet/minecraft/item/BlockItemUseContext;)Lnet/minecraft/block/BlockState;
+  # Start METHOD getStateForPlacement(Lnet/minecraft/item/BlockItemUseContext;)Lnet/minecraft/block/BlockState;
+    class 1485 10 BlockState false net/minecraft/block/BlockState
+    method 1496 20 getStateForPlacement net/minecraft/block/Block getStateForPlacement (Lnet/minecraft/item/BlockItemUseContext;)Lnet/minecraft/block/BlockState;
+    class 1517 19 BlockItemUseContext false net/minecraft/item/BlockItemUseContext
+    parameter 1537 7 context mod/ilja615/mosaic_blocks/MosaicBlock getStateForPlacement (Lnet/minecraft/item/BlockItemUseContext;)Lnet/minecraft/block/BlockState; 0
+    method 1568 17 defaultBlockState net/minecraft/block/Block defaultBlockState ()Lnet/minecraft/block/BlockState;
+    method 1588 8 setValue net/minecraft/state/StateHolder setValue (Lnet/minecraft/state/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+    field 1597 6 FACING net/minecraft/block/HorizontalBlock
+    parameter 1605 7 context mod/ilja615/mosaic_blocks/MosaicBlock getStateForPlacement (Lnet/minecraft/item/BlockItemUseContext;)Lnet/minecraft/block/BlockState; 0
+    method 1613 22 getHorizontalDirection net/minecraft/item/ItemUseContext getHorizontalDirection ()Lnet/minecraft/util/Direction;
+    method 1638 11 getOpposite net/minecraft/util/Direction getOpposite ()Lnet/minecraft/util/Direction;
+  # End METHOD
+  methoddef 1665 1730 use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType;
+  # Start METHOD use(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType;
+    class 1666 8 Override false java/lang/Override
+    class 1686 16 ActionResultType false net/minecraft/util/ActionResultType
+    method 1703 3 use net/minecraft/block/AbstractBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType;
+    class 1707 10 BlockState false net/minecraft/block/BlockState
+    parameter 1718 5 state mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 0
+    class 1725 5 World false net/minecraft/world/World
+    parameter 1731 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    class 1740 8 BlockPos false net/minecraft/util/math/BlockPos
+    parameter 1749 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    class 1754 12 PlayerEntity false net/minecraft/entity/player/PlayerEntity
+    parameter 1767 6 player mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 3
+    class 1775 4 Hand false net/minecraft/util/Hand
+    parameter 1780 6 handIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 4
+    class 1788 19 BlockRayTraceResult false net/minecraft/util/math/BlockRayTraceResult
+    parameter 1808 3 hit mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 5
+    parameter 1831 5 state mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 0
+    method 1837 11 hasProperty net/minecraft/state/StateHolder hasProperty (Lnet/minecraft/state/Property;)Z
+    field 1849 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    parameter 1860 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    field 1868 12 isClientSide net/minecraft/world/World
+    class 1900 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+    method 1912 9 isDyeItem mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z
+    parameter 1922 6 player mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 3
+    method 1929 13 getItemInHand net/minecraft/entity/LivingEntity getItemInHand (Lnet/minecraft/util/Hand;)Lnet/minecraft/item/ItemStack;
+    parameter 1943 6 handIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 4
+    method 1951 7 getItem net/minecraft/item/ItemStack getItem ()Lnet/minecraft/item/Item;
+    class 1985 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+    field 1997 13 DYE_COLOR_MAP mod/ilja615/mosaic_blocks/MosaicColor
+    method 2011 3 get java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;
+    parameter 2015 6 player mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 3
+    method 2022 13 getItemInHand net/minecraft/entity/LivingEntity getItemInHand (Lnet/minecraft/util/Hand;)Lnet/minecraft/item/ItemStack;
+    parameter 2036 6 handIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 4
+    method 2044 7 getItem net/minecraft/item/ItemStack getItem ()Lnet/minecraft/item/Item;
+    method 2054 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 2072 8 toString java/lang/Object toString ()Ljava/lang/String;
+    parameter 2087 5 state mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 0
+    method 2093 8 getValue net/minecraft/state/StateHolder getValue (Lnet/minecraft/state/Property;)Ljava/lang/Comparable;
+    field 2102 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    parameter 2132 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    method 2140 8 setBlock net/minecraft/world/IWorldWriter setBlock (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z
+    parameter 2149 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    parameter 2154 5 state mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 0
+    method 2160 8 setValue net/minecraft/state/StateHolder setValue (Lnet/minecraft/state/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+    field 2169 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    class 2176 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+    field 2188 13 DYE_COLOR_MAP mod/ilja615/mosaic_blocks/MosaicColor
+    method 2202 3 get java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;
+    parameter 2206 6 player mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 3
+    method 2213 13 getItemInHand net/minecraft/entity/LivingEntity getItemInHand (Lnet/minecraft/util/Hand;)Lnet/minecraft/item/ItemStack;
+    parameter 2227 6 handIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 4
+    method 2235 7 getItem net/minecraft/item/ItemStack getItem ()Lnet/minecraft/item/Item;
+    method 2245 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 2263 8 toString java/lang/Object toString ()Ljava/lang/String;
+    parameter 2305 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    field 2313 6 random net/minecraft/world/World
+    method 2320 9 nextFloat java/util/Random nextFloat ()F
+    class 2335 6 Config false mod/ilja615/mosaic_blocks/Config
+    field 2342 18 DYE_CONSUME_CHANCE mod/ilja615/mosaic_blocks/Config
+    method 2361 3 get net/minecraftforge/common/ForgeConfigSpec$ConfigValue get ()Ljava/lang/Object;
+    parameter 2381 6 player mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 3
+    method 2388 10 isCreative net/minecraft/entity/player/PlayerEntity isCreative ()Z
+    parameter 2428 6 player mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 3
+    method 2435 13 getItemInHand net/minecraft/entity/LivingEntity getItemInHand (Lnet/minecraft/util/Hand;)Lnet/minecraft/item/ItemStack;
+    parameter 2449 6 handIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 4
+    method 2457 6 shrink net/minecraft/item/ItemStack shrink (I)V
+    parameter 2492 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    method 2500 9 playSound net/minecraft/world/IWorld playSound (Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V
+    parameter 2516 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    class 2521 11 SoundEvents false net/minecraft/util/SoundEvents
+    field 2533 9 AXE_STRIP net/minecraft/util/SoundEvents
+    class 2544 13 SoundCategory false net/minecraft/util/SoundCategory
+    field 2558 6 BLOCKS net/minecraft/util/SoundCategory
+    local_variable 2611 1 i mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 6 I
+    local_variable 2618 1 i mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 6 I
+    local_variable 2627 1 i mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 6 I
+    local_variable 2667 2 d0 mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 7 D
+    parameter 2672 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    field 2680 6 random net/minecraft/world/World
+    method 2687 12 nextGaussian java/util/Random nextGaussian ()D
+    local_variable 2746 2 d1 mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 8 D
+    parameter 2751 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    field 2759 6 random net/minecraft/world/World
+    method 2766 12 nextGaussian java/util/Random nextGaussian ()D
+    local_variable 2825 2 d2 mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 9 D
+    parameter 2830 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    field 2838 6 random net/minecraft/world/World
+    method 2845 12 nextGaussian java/util/Random nextGaussian ()D
+    class 2899 11 ServerWorld false net/minecraft/world/server/ServerWorld
+    parameter 2911 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    method 2920 13 sendParticles net/minecraft/world/server/ServerWorld sendParticles (Lnet/minecraft/particles/IParticleData;DDDIDDDD)I
+    class 2934 13 ParticleTypes false net/minecraft/particles/ParticleTypes
+    field 2948 5 SMOKE net/minecraft/particles/ParticleTypes
+    parameter 2955 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    method 2959 4 getX net/minecraft/util/math/vector/Vector3i getX ()I
+    parameter 2974 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    method 2978 4 getY net/minecraft/util/math/vector/Vector3i getY ()I
+    parameter 2993 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    method 2997 4 getZ net/minecraft/util/math/vector/Vector3i getZ ()I
+    local_variable 3016 2 d0 mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 7 D
+    local_variable 3020 2 d1 mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 8 D
+    local_variable 3024 2 d2 mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 9 D
+    parameter 3112 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    method 3120 9 playSound net/minecraft/world/IWorld playSound (Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V
+    parameter 3136 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    class 3141 11 SoundEvents false net/minecraft/util/SoundEvents
+    field 3153 19 ITEM_FRAME_ADD_ITEM net/minecraft/util/SoundEvents
+    class 3174 13 SoundCategory false net/minecraft/util/SoundCategory
+    field 3188 6 BLOCKS net/minecraft/util/SoundCategory
+    class 3272 16 ActionResultType false net/minecraft/util/ActionResultType
+    field 3289 7 SUCCESS net/minecraft/util/ActionResultType
+    method 3343 3 use net/minecraft/block/AbstractBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType;
+    parameter 3347 5 state mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 0
+    parameter 3354 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 1
+    parameter 3363 3 pos mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 2
+    parameter 3368 6 player mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 3
+    parameter 3376 6 handIn mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 4
+    parameter 3384 3 hit mod/ilja615/mosaic_blocks/MosaicBlock use (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType; 5
+  # End METHOD
+  methoddef 3401 485 updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;
+  # Start METHOD updateShape(Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;
+    class 3402 8 Override false java/lang/Override
+    class 3422 10 BlockState false net/minecraft/block/BlockState
+    method 3433 11 updateShape net/minecraft/block/AbstractBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;
+    class 3445 10 BlockState false net/minecraft/block/BlockState
+    parameter 3456 7 stateIn mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 0
+    class 3465 9 Direction false net/minecraft/util/Direction
+    parameter 3475 6 facing mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 1
+    class 3483 10 BlockState false net/minecraft/block/BlockState
+    parameter 3494 11 facingState mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 2
+    class 3507 6 IWorld false net/minecraft/world/IWorld
+    parameter 3514 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 3
+    class 3523 8 BlockPos false net/minecraft/util/math/BlockPos
+    parameter 3532 10 currentPos mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 4
+    class 3544 8 BlockPos false net/minecraft/util/math/BlockPos
+    parameter 3553 9 facingPos mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 5
+    parameter 3582 7 stateIn mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 0
+    method 3590 11 hasProperty net/minecraft/state/StateHolder hasProperty (Lnet/minecraft/state/Property;)Z
+    field 3602 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    parameter 3613 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 3
+    method 3621 12 isClientSide net/minecraft/world/IWorldReader isClientSide ()Z
+    parameter 3663 11 facingState mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 2
+    method 3675 8 getBlock net/minecraft/block/AbstractBlock$AbstractBlockState getBlock ()Lnet/minecraft/block/Block;
+    class 3689 6 Blocks false net/minecraft/block/Blocks
+    field 3696 10 WET_SPONGE net/minecraft/block/Blocks
+    parameter 3731 7 stateIn mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 0
+    method 3739 8 setValue net/minecraft/state/StateHolder setValue (Lnet/minecraft/state/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+    field 3748 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    class 3755 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+    field 3767 5 WHITE mod/ilja615/mosaic_blocks/MosaicColor
+    method 3806 11 updateShape net/minecraft/block/AbstractBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;
+    parameter 3818 7 stateIn mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 0
+    parameter 3827 6 facing mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 1
+    parameter 3835 11 facingState mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 2
+    parameter 3848 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 3
+    parameter 3857 10 currentPos mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 4
+    parameter 3869 9 facingPos mod/ilja615/mosaic_blocks/MosaicBlock updateShape (Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState; 5
+  # End METHOD
+  methoddef 3892 101 hasAnalogOutputSignal (Lnet/minecraft/block/BlockState;)Z
+  # Start METHOD hasAnalogOutputSignal(Lnet/minecraft/block/BlockState;)Z
+    class 3893 8 Override false java/lang/Override
+    method 3921 21 hasAnalogOutputSignal net/minecraft/block/AbstractBlock hasAnalogOutputSignal (Lnet/minecraft/block/BlockState;)Z
+    class 3943 10 BlockState false net/minecraft/block/BlockState
+    parameter 3954 5 state mod/ilja615/mosaic_blocks/MosaicBlock hasAnalogOutputSignal (Lnet/minecraft/block/BlockState;)Z 0
+  # End METHOD
+  methoddef 3999 270 getAnalogOutputSignal (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I
+  # Start METHOD getAnalogOutputSignal(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I
+    class 4000 8 Override false java/lang/Override
+    method 4024 21 getAnalogOutputSignal net/minecraft/block/AbstractBlock getAnalogOutputSignal (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I
+    class 4046 10 BlockState false net/minecraft/block/BlockState
+    parameter 4057 10 blockState mod/ilja615/mosaic_blocks/MosaicBlock getAnalogOutputSignal (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I 0
+    class 4069 5 World false net/minecraft/world/World
+    parameter 4075 7 worldIn mod/ilja615/mosaic_blocks/MosaicBlock getAnalogOutputSignal (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I 1
+    class 4084 8 BlockPos false net/minecraft/util/math/BlockPos
+    parameter 4093 3 pos mod/ilja615/mosaic_blocks/MosaicBlock getAnalogOutputSignal (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I 2
+    parameter 4116 10 blockState mod/ilja615/mosaic_blocks/MosaicBlock getAnalogOutputSignal (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I 0
+    method 4127 11 hasProperty net/minecraft/state/StateHolder hasProperty (Lnet/minecraft/state/Property;)Z
+    field 4139 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    class 4178 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+    parameter 4190 10 blockState mod/ilja615/mosaic_blocks/MosaicBlock getAnalogOutputSignal (Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I 0
+    method 4201 8 getValue net/minecraft/state/StateHolder getValue (Lnet/minecraft/state/Property;)Ljava/lang/Comparable;
+    field 4210 5 COLOR mod/ilja615/mosaic_blocks/MosaicBlock
+    method 4218 14 getIndexNumber mod/ilja615/mosaic_blocks/MosaicColor getIndexNumber ()I
+  # End METHOD
+# End CLASS
+end
+start 1 mod/ilja615/mosaic_blocks/MosaicColor.java 6b25767b237afb15c00f83bf713b3c00
+package 8 25 mod.ilja615.mosaic_blocks
+enumdef 166 2963 mod/ilja615/mosaic_blocks/MosaicColor
+# Start ENUM mod/ilja615/mosaic_blocks/MosaicColor
+  class 178 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+  class 201 19 IStringSerializable false net/minecraft/util/IStringSerializable
+  field 227 5 WHITE mod/ilja615/mosaic_blocks/MosaicColor
+  field 250 6 ORANGE mod/ilja615/mosaic_blocks/MosaicColor
+  field 275 7 MAGENTA mod/ilja615/mosaic_blocks/MosaicColor
+  field 302 10 LIGHT_BLUE mod/ilja615/mosaic_blocks/MosaicColor
+  field 335 6 YELLOW mod/ilja615/mosaic_blocks/MosaicColor
+  field 360 4 LIME mod/ilja615/mosaic_blocks/MosaicColor
+  field 381 4 PINK mod/ilja615/mosaic_blocks/MosaicColor
+  field 402 4 GRAY mod/ilja615/mosaic_blocks/MosaicColor
+  field 423 10 LIGHT_GRAY mod/ilja615/mosaic_blocks/MosaicColor
+  field 456 4 CYAN mod/ilja615/mosaic_blocks/MosaicColor
+  field 477 6 PURPLE mod/ilja615/mosaic_blocks/MosaicColor
+  field 503 4 BLUE mod/ilja615/mosaic_blocks/MosaicColor
+  field 525 5 BROWN mod/ilja615/mosaic_blocks/MosaicColor
+  field 549 5 GREEN mod/ilja615/mosaic_blocks/MosaicColor
+  field 573 3 RED mod/ilja615/mosaic_blocks/MosaicColor
+  field 593 5 BLACK mod/ilja615/mosaic_blocks/MosaicColor
+  class 632 6 String false java/lang/String
+  field 639 4 name mod/ilja615/mosaic_blocks/MosaicColor
+  field 667 11 indexNumber mod/ilja615/mosaic_blocks/MosaicColor
+  methoddef 686 119 <init> (Ljava/lang/String;ILjava/lang/String;I)V
+  # Start METHOD <init>(Ljava/lang/String;ILjava/lang/String;I)V
+    method 694 11 MosaicColor mod/ilja615/mosaic_blocks/MosaicColor <init> (Ljava/lang/String;ILjava/lang/String;I)V
+    class 706 6 String false java/lang/String
+    parameter 713 4 name mod/ilja615/mosaic_blocks/MosaicColor <init> (Ljava/lang/String;ILjava/lang/String;I)V 2
+    parameter 723 11 indexNumber mod/ilja615/mosaic_blocks/MosaicColor <init> (Ljava/lang/String;ILjava/lang/String;I)V 3
+    field 755 4 name mod/ilja615/mosaic_blocks/MosaicColor
+    parameter 762 4 name mod/ilja615/mosaic_blocks/MosaicColor <init> (Ljava/lang/String;ILjava/lang/String;I)V 2
+    field 773 11 indexNumber mod/ilja615/mosaic_blocks/MosaicColor
+    parameter 787 11 indexNumber mod/ilja615/mosaic_blocks/MosaicColor <init> (Ljava/lang/String;ILjava/lang/String;I)V 3
+  # End METHOD
+  methoddef 811 81 getSerializedName ()Ljava/lang/String;
+  # Start METHOD getSerializedName()Ljava/lang/String;
+    class 812 8 Override false java/lang/Override
+    class 832 6 String false java/lang/String
+    method 839 17 getSerializedName net/minecraft/util/IStringSerializable getSerializedName ()Ljava/lang/String;
+    field 881 4 name mod/ilja615/mosaic_blocks/MosaicColor
+  # End METHOD
+  methoddef 898 68 getIndexNumber ()I
+  # Start METHOD getIndexNumber()I
+    method 909 14 getIndexNumber mod/ilja615/mosaic_blocks/MosaicColor getIndexNumber ()I
+    field 948 11 indexNumber mod/ilja615/mosaic_blocks/MosaicColor
+  # End METHOD
+  methoddef 972 1339 isDyeItem (Lnet/minecraft/item/Item;)Z
+  # Start METHOD isDyeItem(Lnet/minecraft/item/Item;)Z
+    method 994 9 isDyeItem mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z
+    class 1004 4 Item false net/minecraft/item/Item
+    parameter 1009 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    parameter 1048 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1053 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1071 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1082 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1127 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1132 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1150 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1161 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1207 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1212 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1230 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1241 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1288 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1293 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1311 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1322 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1372 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1377 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1395 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1406 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1452 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1457 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1475 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1486 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1530 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1535 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1553 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1564 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1608 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1613 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1631 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1642 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1686 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1691 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1709 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1720 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1770 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1775 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1793 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1804 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1848 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1853 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1871 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1882 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 1928 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 1933 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 1951 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 1962 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 2006 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 2011 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 2029 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 2040 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 2085 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 2090 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 2108 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 2119 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 2164 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 2169 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 2187 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 2198 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+    parameter 2241 4 item mod/ilja615/mosaic_blocks/MosaicColor isDyeItem (Lnet/minecraft/item/Item;)Z 0
+    method 2246 15 getRegistryName net/minecraftforge/registries/IForgeRegistryEntry getRegistryName ()Lnet/minecraft/util/ResourceLocation;
+    method 2264 8 toString java/lang/Object toString ()Ljava/lang/String;
+    method 2275 6 equals java/lang/Object equals (Ljava/lang/Object;)Z
+  # End METHOD
+  class 2337 3 Map false java/util/Map
+  class 2341 6 String false java/lang/String
+  class 2349 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+  field 2362 13 DYE_COLOR_MAP mod/ilja615/mosaic_blocks/MosaicColor
+  class 2382 7 HashMap false java/util/HashMap
+  class 2390 6 String false java/lang/String
+  class 2398 11 MosaicColor false mod/ilja615/mosaic_blocks/MosaicColor
+  classdef 2413 713 mod/ilja615/mosaic_blocks/MosaicColor$1
+  # Start CLASS mod/ilja615/mosaic_blocks/MosaicColor$1
+    method 2424 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    methoddef 2414 711 <clinit> ()V
+    # Start METHOD <clinit>()V
+      field 2451 5 WHITE mod/ilja615/mosaic_blocks/MosaicColor
+      method 2467 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2495 6 ORANGE mod/ilja615/mosaic_blocks/MosaicColor
+      method 2512 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2541 7 MAGENTA mod/ilja615/mosaic_blocks/MosaicColor
+      method 2559 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2591 10 LIGHT_BLUE mod/ilja615/mosaic_blocks/MosaicColor
+      method 2612 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2640 6 YELLOW mod/ilja615/mosaic_blocks/MosaicColor
+      method 2657 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2683 4 LIME mod/ilja615/mosaic_blocks/MosaicColor
+      method 2698 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2724 4 PINK mod/ilja615/mosaic_blocks/MosaicColor
+      method 2739 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2765 4 GRAY mod/ilja615/mosaic_blocks/MosaicColor
+      method 2780 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2812 10 LIGHT_GRAY mod/ilja615/mosaic_blocks/MosaicColor
+      method 2833 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2859 4 CYAN mod/ilja615/mosaic_blocks/MosaicColor
+      method 2874 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2902 6 PURPLE mod/ilja615/mosaic_blocks/MosaicColor
+      method 2919 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2945 4 BLUE mod/ilja615/mosaic_blocks/MosaicColor
+      method 2960 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 2987 5 BROWN mod/ilja615/mosaic_blocks/MosaicColor
+      method 3003 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 3030 5 GREEN mod/ilja615/mosaic_blocks/MosaicColor
+      method 3046 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 3071 3 RED mod/ilja615/mosaic_blocks/MosaicColor
+      method 3085 3 put java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      field 3112 5 BLACK mod/ilja615/mosaic_blocks/MosaicColor
+    # End METHOD
+  # End CLASS
+# End ENUM
+end

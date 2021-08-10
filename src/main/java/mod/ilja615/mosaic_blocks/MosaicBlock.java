@@ -1,94 +1,98 @@
 package mod.ilja615.mosaic_blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.HorizontalBlock;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.Item;
-import net.minecraft.particles.IParticleData;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.state.DirectionProperty;
-import net.minecraft.state.EnumProperty;
-import net.minecraft.state.StateContainer;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.util.*;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.BlockRayTraceResult;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.World;
-import net.minecraft.world.server.ServerWorld;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class MosaicBlock extends HorizontalBlock
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+
+import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+
+public class MosaicBlock extends HorizontalDirectionalBlock
 {
     public static final EnumProperty COLOR = EnumProperty.create("color", MosaicColor.class);
 
     public MosaicBlock(Properties properties)
     {
         super(properties);
-        this.setDefaultState(this.stateContainer.getBaseState().with(HORIZONTAL_FACING, Direction.NORTH).with(COLOR, MosaicColor.WHITE));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(COLOR, MosaicColor.WHITE));
     }
 
-    protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(HORIZONTAL_FACING, COLOR);
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(FACING, COLOR);
     }
 
-    public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return this.getDefaultState().with(HORIZONTAL_FACING, context.getPlacementHorizontalFacing().getOpposite());
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
     @Override
-    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit)
+    public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit)
     {
-        if (state.hasProperty(COLOR) && !worldIn.isRemote) {
-            if (MosaicColor.isDyeItem(player.getHeldItem(handIn).getItem())) {
-                if (MosaicColor.DYE_COLOR_MAP.get(player.getHeldItem(handIn).getItem().getRegistryName().toString()) != state.get(COLOR)) {
-                    worldIn.setBlockState(pos, state.with(COLOR, MosaicColor.DYE_COLOR_MAP.get(player.getHeldItem(handIn).getItem().getRegistryName().toString())), 3);
-                    if (worldIn.rand.nextFloat() < (Config.DYE_CONSUME_CHANCE.get() / 100.0f) && !player.isCreative()) {
-                        player.getHeldItem(handIn).shrink(1);
-                        worldIn.playSound(null, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 0.5f, 1.0F);
+        if (state.hasProperty(COLOR) && !worldIn.isClientSide) {
+            if (MosaicColor.isDyeItem(player.getItemInHand(handIn).getItem())) {
+                if (MosaicColor.DYE_COLOR_MAP.get(player.getItemInHand(handIn).getItem().getRegistryName().toString()) != state.getValue(COLOR)) {
+                    worldIn.setBlock(pos, state.setValue(COLOR, MosaicColor.DYE_COLOR_MAP.get(player.getItemInHand(handIn).getItem().getRegistryName().toString())), 3);
+                    if (worldIn.random.nextFloat() < (Config.DYE_CONSUME_CHANCE.get() / 100.0f) && !player.isCreative()) {
+                        player.getItemInHand(handIn).shrink(1);
+                        worldIn.playSound(null, pos, SoundEvents.AXE_STRIP, SoundSource.BLOCKS, 0.5f, 1.0F);
                         for(int i = 0; i < 7; ++i) {
-                            double d0 = worldIn.rand.nextGaussian() * 0.02D;
-                            double d1 = worldIn.rand.nextGaussian() * 0.02D;
-                            double d2 = worldIn.rand.nextGaussian() * 0.02D;
-                            ((ServerWorld)worldIn).spawnParticle(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 1.2D, pos.getZ() + 0.5D, 1,  d0, d1, d2, 0d);
+                            double d0 = worldIn.random.nextGaussian() * 0.02D;
+                            double d1 = worldIn.random.nextGaussian() * 0.02D;
+                            double d2 = worldIn.random.nextGaussian() * 0.02D;
+                            ((ServerLevel)worldIn).sendParticles(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 1.2D, pos.getZ() + 0.5D, 1,  d0, d1, d2, 0d);
                         }
                     } else {
-                        worldIn.playSound(null, pos, SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 0.5f, 1.0F);
+                        worldIn.playSound(null, pos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 0.5f, 1.0F);
                     }
                 }
-                return ActionResultType.SUCCESS;
+                return InteractionResult.SUCCESS;
             }
         }
-        return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
+        return super.use(state, worldIn, pos, player, handIn, hit);
     }
 
     @Override
-    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos)
+    public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor worldIn, BlockPos currentPos, BlockPos facingPos)
     {
-        if (stateIn.hasProperty(COLOR) && !worldIn.isRemote())
+        if (stateIn.hasProperty(COLOR) && !worldIn.isClientSide())
         {
             if (facingState.getBlock() == Blocks.WET_SPONGE)
-                return stateIn.with(COLOR, MosaicColor.WHITE);
+                return stateIn.setValue(COLOR, MosaicColor.WHITE);
         }
-        return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+        return super.updateShape(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
 
     @Override
-    public boolean hasComparatorInputOverride(BlockState state)
+    public boolean hasAnalogOutputSignal(BlockState state)
     {
         return true;
     }
 
     @Override
-    public int getComparatorInputOverride(BlockState blockState, World worldIn, BlockPos pos)
+    public int getAnalogOutputSignal(BlockState blockState, Level worldIn, BlockPos pos)
     {
         if (blockState.hasProperty(COLOR))
         {
-            return ((MosaicColor)blockState.get(COLOR)).getIndexNumber();
+            return ((MosaicColor)blockState.getValue(COLOR)).getIndexNumber();
         }
         return 0;
     }

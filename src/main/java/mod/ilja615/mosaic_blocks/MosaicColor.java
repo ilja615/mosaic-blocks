@@ -1,13 +1,13 @@
 package mod.ilja615.mosaic_blocks;
 
-import net.minecraft.item.Item;
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.world.item.Item;
+import net.minecraft.util.StringRepresentable;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
-public enum MosaicColor implements IStringSerializable
+public enum MosaicColor implements StringRepresentable
 {
     WHITE("white", 0),
     ORANGE("orange", 1),
@@ -36,7 +36,7 @@ public enum MosaicColor implements IStringSerializable
     }
 
     @Override
-    public String getString() {
+    public String getSerializedName() {
         return this.name;
     }
 

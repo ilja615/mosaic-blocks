@@ -37,9 +37,9 @@ public class Config
         builder.comment("The configuration for the Mosaic Blocks mod");
 
         DYE_CONSUME_CHANCE = builder
-                .comment("The chance that the dye will be consumed when painting a mosaic block in the survival mode. \n" +
-                        "0 is that it will never consume, and 100 that it will always consume. \n" +
-                        "20 is the default value and that is the same chance as an Ender Eye breaking, for comparison.")
+                .comment("The chance that the dye will be consumed when painting a mosaic block in the survival mode. \n")
+                .comment("0 is that it will never consume, and 100 that it will always consume. \n")
+                .comment("20 is the default value and that is the same chance as an Ender Eye breaking, for comparison.")
                 .defineInRange("value.dye_consume_chance", 20, 0, 100);
     }
 }

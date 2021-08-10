@@ -1,20 +1,20 @@
 package mod.ilja615.mosaic_blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -29,8 +29,8 @@ import static mod.ilja615.mosaic_blocks.ModMain.MOD_ID;
 public class ModMain
 {
     public static final String MOD_ID = "mosaic_blocks";
-    public static final Item.Properties ITEM_PROPERTY = new Item.Properties().group(ItemGroup.DECORATIONS);
-    public static final Block.Properties BLOCK_PROPERTY = Block.Properties.from(Blocks.WHITE_GLAZED_TERRACOTTA);
+    public static final Item.Properties ITEM_PROPERTY = new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS);
+    public static final Block.Properties BLOCK_PROPERTY = Block.Properties.copy(Blocks.WHITE_GLAZED_TERRACOTTA);
 
     public static ModMain INSTANCE;
 

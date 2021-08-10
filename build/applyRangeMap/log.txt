@@ -1,0 +1,53 @@
+Java Launcher: /Users/Ilja/.gradle/jdks/jdk-11.0.12+7/Contents/Home/bin/java
+Arguments: '--apply, --input, /Users/Ilja/Documents/mc alles/mosaic-blocks/src/main/java, --range, /Users/Ilja/Documents/mc alles/mosaic-blocks/build/extractRangeMap/output.txt, --srg, /Users/Ilja/Documents/mc alles/mosaic-blocks/build/chainClassnames/chainedmappings.tsrg, --output, /Users/Ilja/Documents/mc alles/mosaic-blocks/build/applyRangeMap/output.zip, --keepImports, true'
+Classpath:
+ - /Users/Ilja/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/Srg2Source/8.0.1/Srg2Source-8.0.1-fatjar.jar
+Working directory: /Users/Ilja/Documents/mc alles/mosaic-blocks/build/applyRangeMap
+Main class: net.minecraftforge.srg2source.ConsoleTool
+====================================
+Range:   /Users/Ilja/Documents/mc alles/mosaic-blocks/build/extractRangeMap/output.txt
+Output:  /Users/Ilja/Documents/mc alles/mosaic-blocks/build/applyRangeMap/output.zip
+Imports: true
+Sort:    false
+Lambdas: false
+Locals:  false
+Map:     /Users/Ilja/Documents/mc alles/mosaic-blocks/build/chainClassnames/chainedmappings.tsrg
+Input:   /Users/Ilja/Documents/mc alles/mosaic-blocks/src/main/java
+Processing 5 files
+Start Processing: mod/ilja615/mosaic_blocks/Config.java
+End  Processing: mod/ilja615/mosaic_blocks/Config.java
+
+Start Processing: mod/ilja615/mosaic_blocks/ModBlocks.java
+End  Processing: mod/ilja615/mosaic_blocks/ModBlocks.java
+
+Start Processing: mod/ilja615/mosaic_blocks/ModMain.java
+Rename ClassReference[1242:9, "ItemGroup", Internal: net/minecraft/item/ItemGroup, Qualified: false] Shift[0] ItemGroup -> CreativeModeTab
+End  Processing: mod/ilja615/mosaic_blocks/ModMain.java
+
+Start Processing: mod/ilja615/mosaic_blocks/MosaicBlock.java
+Rename ClassReference[1001:15, "HorizontalBlock", Internal: net/minecraft/block/HorizontalBlock, Qualified: false] Shift[0] HorizontalBlock -> HorizontalDirectionalBlock
+Rename ClassReference[1378:14, "StateContainer", Internal: net/minecraft/state/StateContainer, Qualified: false] Shift[11] StateContainer -> StateDefinition
+Rename ClassReference[1517:19, "BlockItemUseContext", Internal: net/minecraft/item/BlockItemUseContext, Qualified: false] Shift[12] BlockItemUseContext -> BlockPlaceContext
+Rename ClassReference[1686:16, "ActionResultType", Internal: net/minecraft/util/ActionResultType, Qualified: false] Shift[10] ActionResultType -> InteractionResult
+Rename ClassReference[1725:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[11] World -> Level
+Rename ClassReference[1754:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[11] PlayerEntity -> Player
+Rename ClassReference[1775:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[5] Hand -> InteractionHand
+Rename ClassReference[1788:19, "BlockRayTraceResult", Internal: net/minecraft/util/math/BlockRayTraceResult, Qualified: false] Shift[16] BlockRayTraceResult -> BlockHitResult
+Rename ClassReference[2544:13, "SoundCategory", Internal: net/minecraft/util/SoundCategory, Qualified: false] Shift[11] SoundCategory -> SoundSource
+Rename ClassReference[2899:11, "ServerWorld", Internal: net/minecraft/world/server/ServerWorld, Qualified: false] Shift[9] ServerWorld -> ServerLevel
+Rename ClassReference[3174:13, "SoundCategory", Internal: net/minecraft/util/SoundCategory, Qualified: false] Shift[9] SoundCategory -> SoundSource
+Rename ClassReference[3272:16, "ActionResultType", Internal: net/minecraft/util/ActionResultType, Qualified: false] Shift[7] ActionResultType -> InteractionResult
+Rename ClassReference[3507:6, "IWorld", Internal: net/minecraft/world/IWorld, Qualified: false] Shift[8] IWorld -> LevelAccessor
+Rename ClassReference[4069:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[15] World -> Level
+Adding 5 imports
+        net.minecraft.core.Direction
+        net.minecraft.sounds.SoundEvents
+        net.minecraft.sounds.SoundSource
+        net.minecraft.world.InteractionHand
+        net.minecraft.world.InteractionResult
+End  Processing: mod/ilja615/mosaic_blocks/MosaicBlock.java
+
+Start Processing: mod/ilja615/mosaic_blocks/MosaicColor.java
+Rename ClassReference[201:19, "IStringSerializable", Internal: net/minecraft/util/IStringSerializable, Qualified: false] Shift[0] IStringSerializable -> StringRepresentable
+End  Processing: mod/ilja615/mosaic_blocks/MosaicColor.java
+

@@ -1,5 +1,7 @@
-Args: "--inJar", "/Users/Ilja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.16.5-36.0.21/forge-1.16.5-36.0.21-injected.jar", "--outJar", "/Users/Ilja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.16.5-36.0.21_mapped_snapshot_20201028-1.16.3/forge-1.16.5-36.0.21_mapped_snapshot_20201028-1.16.3.jar", "--logFile", "accesstransform.log", "--atFile", "/Users/Ilja/Documents/mc alles/mosaic blocks/build/_atJar_5/parent_at.cfg"
-Classpath: /Users/Ilja/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/1.0.5/accesstransformers-1.0.5-fatjar.jar
-WorkDir: /Users/Ilja/Documents/mc alles/mosaic blocks/build/_atJar_5
-Main: net.minecraftforge.accesstransformer.TransformerProcessor
+Java Launcher: /Library/Java/JavaVirtualMachines/adoptopenjdk-15-openj9.jdk/Contents/Home/bin/java
+Arguments: '--inJar, /Users/Ilja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.16.5-36.0.21/forge-1.16.5-36.0.21-injected.jar, --outJar, /Users/Ilja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.16.5-36.0.21_mapped_official_1.16.5/forge-1.16.5-36.0.21_mapped_official_1.16.5.jar, --logFile, accesstransform.log, --atFile, /Users/Ilja/Documents/mc alles/mosaic-blocks/build/_atJar_5/parent_at.cfg'
+Classpath:
+ - /Users/Ilja/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/3.0.1/accesstransformers-3.0.1-fatjar.jar
+Working directory: /Users/Ilja/Documents/mc alles/mosaic-blocks/build/_atJar_5
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
 ====================================
