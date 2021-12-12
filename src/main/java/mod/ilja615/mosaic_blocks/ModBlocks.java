@@ -1,7 +1,7 @@
 package mod.ilja615.mosaic_blocks;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.fmllegacy.RegistryObject;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlocks
 {

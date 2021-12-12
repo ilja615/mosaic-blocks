@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Implementation-Title: mosaic-blocks
-Implementation-Version: 1.17.1-1.0
-Specification-Vendor: examplemodsareus
 Specification-Title: examplemod
-Implementation-Timestamp: 2021-08-11T21:03:15+0200
+Specification-Vendor: examplemodsareus
 Specification-Version: 1
+Implementation-Title: mosaic-blocks
+Implementation-Version: 1.18.1-1.0
 Implementation-Vendor: examplemodsareus
+Implementation-Timestamp: 2021-12-12T15:28:50+0100
 

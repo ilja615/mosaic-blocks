@@ -1,184 +1,171 @@
 {
   "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_rose_red": "2021-12-12 15:22:01 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_candle": {
+    "criteria": {
+      "has_blue_dye": "2021-12-12 15:22:04 +0100"
     },
     "done": true
   },
   "minecraft:recipes/misc/pink_dye_from_red_white_dye": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_red_dye": "2021-12-12 15:22:01 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/light_blue_candle": {
+  "minecraft:recipes/decorations/lime_candle": {
     "criteria": {
-      "has_light_blue_dye": "2021-08-10 23:13:31 +0200"
+      "has_lime_dye": "2021-12-12 15:24:12 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/dark_oak_boat": {
+  "minecraft:recipes/misc/cyan_dye": {
     "criteria": {
-      "in_water": "2021-08-10 23:15:12 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/light_gray_dye_from_gray_white_dye": {
-    "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_blue_dye": "2021-12-12 15:22:04 +0100"
     },
     "done": true
   },
   "minecraft:recipes/misc/magenta_dye_from_blue_red_pink": {
     "criteria": {
-      "has_pink_dye": "2021-08-10 23:13:51 +0200"
+      "has_red_dye": "2021-12-12 15:22:01 +0100"
     },
     "done": true
   },
   "minecraft:recipes/misc/magenta_dye_from_purple_and_pink": {
     "criteria": {
-      "has_purple_dye": "2021-08-10 23:13:24 +0200"
+      "has_pink_dye": "2021-12-12 15:27:48 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/magenta_carpet_from_white_carpet": {
+  "minecraft:recipes/decorations/blue_carpet_from_white_carpet": {
     "criteria": {
-      "has_magenta_dye": "2021-08-10 23:16:49 +0200"
+      "has_blue_dye": "2021-12-12 15:22:04 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/white_candle": {
+  "minecraft:recipes/decorations/green_candle": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_green_dye": "2021-12-12 15:24:07 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/gray_dye": {
+  "minecraft:recipes/decorations/lime_carpet_from_white_carpet": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_lime_dye": "2021-12-12 15:24:12 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:taiga": "2021-08-10 23:12:35 +0200",
-      "minecraft:river": "2021-08-10 23:13:05 +0200"
+      "minecraft:taiga": "2021-12-12 15:20:02 +0100"
     },
     "done": false
   },
   "minecraft:recipes/decorations/pink_stained_glass_pane_from_glass_pane": {
     "criteria": {
-      "has_pink_dye": "2021-08-10 23:13:51 +0200"
+      "has_pink_dye": "2021-12-12 15:27:48 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/white_stained_glass_pane_from_glass_pane": {
+  "minecraft:recipes/decorations/lime_stained_glass_pane_from_glass_pane": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_lime_dye": "2021-12-12 15:24:12 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/birch_boat": {
+  "minecraft:recipes/decorations/red_candle": {
     "criteria": {
-      "in_water": "2021-08-10 23:15:12 +0200"
+      "has_red_dye": "2021-12-12 15:22:02 +0100"
     },
     "done": true
   },
   "minecraft:recipes/decorations/pink_candle": {
     "criteria": {
-      "has_pink_dye": "2021-08-10 23:13:51 +0200"
+      "has_pink_dye": "2021-12-12 15:27:48 +0100"
     },
     "done": true
   },
   "minecraft:recipes/misc/light_blue_dye_from_blue_white_dye": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_blue_dye": "2021-12-12 15:22:04 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/light_blue_stained_glass_pane_from_glass_pane": {
+  "minecraft:recipes/decorations/green_carpet_from_white_carpet": {
     "criteria": {
-      "has_light_blue_dye": "2021-08-10 23:13:31 +0200"
+      "has_green_dye": "2021-12-12 15:24:07 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/acacia_boat": {
+  "minecraft:recipes/decorations/red_stained_glass_pane_from_glass_pane": {
     "criteria": {
-      "in_water": "2021-08-10 23:15:12 +0200"
+      "has_red_dye": "2021-12-12 15:22:01 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/oak_boat": {
+  "minecraft:recipes/misc/orange_dye_from_red_yellow": {
     "criteria": {
-      "in_water": "2021-08-10 23:15:12 +0200"
+      "has_red_dye": "2021-12-12 15:22:01 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_blue_dye": "2021-12-12 15:22:04 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_green_dye": "2021-12-12 15:24:07 +0100"
     },
     "done": true
   },
   "minecraft:recipes/decorations/purple_carpet_from_white_carpet": {
     "criteria": {
-      "has_purple_dye": "2021-08-10 23:13:24 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/light_blue_carpet_from_white_carpet": {
-    "criteria": {
-      "has_light_blue_dye": "2021-08-10 23:13:31 +0200"
+      "has_purple_dye": "2021-12-12 15:27:54 +0100"
     },
     "done": true
   },
   "minecraft:recipes/decorations/purple_candle": {
     "criteria": {
-      "has_purple_dye": "2021-08-10 23:13:24 +0200"
+      "has_purple_dye": "2021-12-12 15:27:54 +0100"
     },
     "done": true
   },
   "minecraft:recipes/decorations/pink_carpet_from_white_carpet": {
     "criteria": {
-      "has_pink_dye": "2021-08-10 23:13:51 +0200"
+      "has_pink_dye": "2021-12-12 15:27:48 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/magenta_candle": {
+  "minecraft:recipes/decorations/red_carpet_from_white_carpet": {
     "criteria": {
-      "has_magenta_dye": "2021-08-10 23:16:49 +0200"
+      "has_red_dye": "2021-12-12 15:22:02 +0100"
     },
     "done": true
   },
   "minecraft:recipes/misc/lime_dye": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_green_dye": "2021-12-12 15:24:07 +0100"
     },
     "done": true
   },
   "minecraft:recipes/decorations/purple_stained_glass_pane_from_glass_pane": {
     "criteria": {
-      "has_purple_dye": "2021-08-10 23:13:24 +0200"
+      "has_purple_dye": "2021-12-12 15:27:54 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/light_gray_dye_from_black_white_dye": {
+  "minecraft:recipes/misc/purple_dye": {
     "criteria": {
-      "has_white_dye": "2021-08-10 23:13:53 +0200"
+      "has_red_dye": "2021-12-12 15:22:01 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/jungle_boat": {
-    "criteria": {
-      "in_water": "2021-08-10 23:15:12 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/magenta_stained_glass_pane_from_glass_pane": {
-    "criteria": {
-      "has_magenta_dye": "2021-08-10 23:16:49 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2021-08-10 23:15:12 +0200"
-    },
-    "done": true
-  },
-  "DataVersion": 2730
+  "DataVersion": 2865
 }

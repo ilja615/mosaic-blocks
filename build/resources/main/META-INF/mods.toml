@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[33,)" #mandatory
+loaderVersion="[39,)" #mandatory
 license="ARR" #mandatory
 credits="HexaBlu for making the textures and the idea, and jojo2357 for generating the jsons" #optional
 [[mods]] #mandatory
